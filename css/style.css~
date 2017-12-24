@@ -1,5 +1,5 @@
 body {
-  background: #ffcccc;
+  background: #bbbbdd;
 }
 
 #container {
@@ -11,6 +11,8 @@ body {
 
 #header {
   background: #ffdddd;
+  margin: 0;
+  padding: 0;
 }
 
 #footer {

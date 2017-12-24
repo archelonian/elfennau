@@ -11,8 +11,12 @@ body {
 
 #header {
   background: #ffdddd;
+  margin: 0;
+  padding: 0;
 }
 
 #footer {
   background: #ffdddd;
+  margin: 0;
+  padding: 0;
 }
