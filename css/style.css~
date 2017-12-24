@@ -37,8 +37,8 @@ body {
 #content mark {
   font-weight: bold;
   font-variant: small-caps;
-  background: none;
-  color: none;
+  background: inherit;
+  color: #ffffff;
 }
 
 #content a {
