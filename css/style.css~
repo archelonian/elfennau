@@ -17,4 +17,6 @@ body {
 
 #footer {
   background: #ffdddd;
+  margin: 0;
+  padding: 0;
 }
