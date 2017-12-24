@@ -1,5 +1,6 @@
 body {
-  background: #bbbbdd;
+  background: #333355;
+  color: #ffffff;
 }
 
 #container {
@@ -12,7 +13,7 @@ body {
 #header {
   background: #ffdddd;
   margin: 0;
-  padding: 0;
+  padding: 2em;
 }
 
 #content {
@@ -23,7 +24,7 @@ body {
 #footer {
   background: #ffdddd;
   margin: 0;
-  padding: 0;
+  padding: 2em;
 }
 
 h1 {
