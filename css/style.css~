@@ -31,4 +31,17 @@ body {
 table, th, td {
   border-collapse: collapse;
   border: 1px solid #8f8f8f;
+  padding: 0.25em;
+}
+
+#content a {
+  text-decoration: none;
+}
+
+#content a:link {
+  color: #708870;
+}
+
+#content a:hover {
+  color: #959e82;
 }
