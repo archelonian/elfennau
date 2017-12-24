@@ -18,7 +18,7 @@ body {
 
 #content {
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
 }
 
 #footer {
@@ -27,7 +27,7 @@ body {
   padding: 1em;
 }
 
-h1 {
+#header h1 {
   margin: 0;
   padding: 0;
 }
