@@ -47,5 +47,5 @@ table, th, td {
 }
 
 #content a:hover {
-  color: #a5ae92;
+  color: #b5bea2;
 }
