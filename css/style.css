@@ -31,4 +31,5 @@ body {
 table, th, td {
   border-collapse: collapse;
   border: 1px solid #8f8f8f;
+  padding: 0.25em;
 }
