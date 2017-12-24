@@ -43,7 +43,7 @@ table, th, td {
 }
 
 #content a:visited {
-  color: #506850;
+  color: #405840;
 }
 
 #content a:hover {
