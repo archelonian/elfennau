@@ -1,6 +1,6 @@
 body {
-  background: #1d2424;
-  color: #d0f8d0;
+  background: #202020;
+  color: #8f8f8f;
 }
 
 #container {
@@ -11,9 +11,9 @@ body {
 }
 
 #header {
-  background: #4e614e;
+  background: #263026;
   margin: 0;
-  padding: 2em;
+  padding: 1em;
 }
 
 #content {
@@ -22,9 +22,9 @@ body {
 }
 
 #footer {
-  background: #4e614e;
+  background: #232d10;
   margin: 0;
-  padding: 2em;
+  padding: 1em;
 }
 
 h1 {
