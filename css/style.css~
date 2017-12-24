@@ -1,6 +1,6 @@
 body {
-  background: #333355;
-  color: #ffffff;
+  background: #1d2424;
+  color: #708870;
 }
 
 #container {
