@@ -28,10 +28,15 @@ body {
   padding: 1em;
 }
 
-table, th, td {
+#content table, #content th, #content td {
   border-collapse: collapse;
   border: 1px solid #8f8f8f;
   padding: 0.25em;
+}
+
+#content mark {
+  font-weight: bold;
+  font-variant: small-caps;
 }
 
 #content a {
