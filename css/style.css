@@ -42,6 +42,10 @@ table, th, td {
   color: #708870;
 }
 
+#content a:visited {
+  color: #172a17;
+}
+
 #content a:hover {
   color: #959e82;
 }
