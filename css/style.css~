@@ -12,7 +12,7 @@ body {
 
 #header {
   background: #212d21;
-  color: 898f89;
+  color: #898f89;
   margin: 0;
   padding: 1em;
 }
