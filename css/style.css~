@@ -1,6 +1,6 @@
 body {
-  background: #2a332a;
-  color: #8f8f8f;
+  background: #ffffff;
+  color: #242c14;
 }
 
 #container {
@@ -11,26 +11,26 @@ body {
 }
 
 #header {
-  background: #364036;
+  background: #212d21;
   margin: 0;
   padding: 1em;
 }
 
 #content {
-  background: #282828;
+  background: #ffffff;
   margin: 0;
   padding: 0.5em;
 }
 
 #footer {
-  background: #232d10;
+  background: #747e60;
   margin: 0;
   padding: 1em;
 }
 
 #content table, #content th, #content td {
   border-collapse: collapse;
-  border: 1px solid #8f8f8f;
+  border: 1px solid #808080;
   padding: 0.25em;
 }
 
@@ -38,7 +38,7 @@ body {
   font-weight: bold;
   font-variant: small-caps;
   background: inherit;
-  color: #ffffff;
+  color: inherit;
 }
 
 #content a {
