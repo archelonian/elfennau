@@ -12,12 +12,13 @@ body {
 
 #header {
   background: #212d21;
+  color: 898f89;
   margin: 0;
   padding: 1em;
 }
 
 #content {
-  background: #ffffff;
+  background: #efefef;
   margin: 0;
   padding: 0.5em;
 }
@@ -38,7 +39,7 @@ body {
   font-weight: bold;
   font-variant: small-caps;
   background: inherit;
-  color: inherit;
+  color: 000000;
 }
 
 #content a {
