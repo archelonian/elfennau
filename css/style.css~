@@ -70,5 +70,5 @@ body {
 }
 
 .cjk {
-  font-family: cjk, elf-jp, sans-serif;
+  font-family: elf-cjk, droid-jp, sans-serif;
 }

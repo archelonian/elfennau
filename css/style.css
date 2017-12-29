@@ -46,6 +46,11 @@ body {
   padding: 0.25em;
 }
 
+#content table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #content mark {
   font-weight: bold;
   font-variant: small-caps;
