@@ -83,31 +83,31 @@
             <td>Aengus</td>
             <td>30 days</td>
             <td>3 &middot; 10</td>
-            <td>Elephant, Vulture, Whale</td>
+            <td><ol class = "ol-3col"><li>Elephant</li><li>Vulture</li><li>Whale</li></ol></td>
           </tr>
           <tr>
             <td>Lugh</td>
             <td>88 days</td>
             <td>4 &middot; 22</td>
-            <td>Frontwise, Backwise, Sunwise, Moonwise</td>
+            <td><ol class = "ol-4col"><li>Frontwise</li><li>Sunwise</li><li>Backwise</li><li>Moonwise</li></ol></td>
           </tr>
           <tr>
             <td>Brigid</td>
             <td>225 days</td>
             <td>5 &middot; (5 &middot; 9)</td>
-            <td>Acacia, Torchwood, Saguaro, Yareta, Eucalyptus</td>
+            <td><ol class = "ol-3col"><li>Acacia</li><li>Torchwood</li><li>Saguaro</li><li>Yareta</li><li>Eucalyptus</li></ol></td>
           </tr>
           <tr>
             <td>Morrigan</td>
             <td>365 days</td>
             <td>6 &middot; (2 &middot; 30) + 5</td>
-            <td>Bustard, Ostrich, Albatross, Dolphin, Crocodile, Walrus</td>
+            <td><ol class = "ol-3col"><li>Bustard</li><li>Ostrich</li><li>Albatross</li><li>Dolphin</li><li>Walrus</li><li>Crocodile</li></ol></td>
           </tr>
           <tr>
             <td>Nuada</td>
             <td>687 days</td>
             <td>7 &middot; (7 &middot; 14) + 1</td>
-            <td>Gweuziezh, Dentiezh, Kevigiezh, Staoniezh, Drekstaoniezh, La&ntilde;chenniezh, Troc'h-aveliezh
+            <td><ol class = "ol-4col"><li>Gweuziezh</li><li>Dentiezh</li><li>Keviezh</li><li>Staoniezh</li><li>Keiniezh</li><li>La&ntilde;viezh</li><li>Troc'h-aveliezh</li></ol></td>
           </tr>
           <tr>
             <td>Dagda</td>
@@ -119,7 +119,7 @@
             <td>Bres</td>
             <td>10759 days</td>
             <td>9 &middot; (1195 &frac12;)</td>
-            <td>Robin, Kingfisher, Osprey, Loon, Owl, Grosbeak, Tern, Bunting, Ptarmigan</td>
+            <td><ol class = "ol-3col"><li>Robin</li><li>Kingfisher</li><li>Osprey</li><li>Loon</li><li>Owl</li><li>Grosbeak</li><li>Tern</li><li>Bunting</li><li>Ptarmigan</li></ol></td>
           </tr>
         </table>
       </div>
