@@ -1,6 +1,6 @@
 @font-face {
   font-family: cjk;
-  src: url(media/elfennau.ttf);
+  src: url(../media/elfennau.ttf);
 
 body {
   background: #ffffff;
@@ -65,3 +65,4 @@ body {
 
 .cjk {
   font-family: cjk;
+}
