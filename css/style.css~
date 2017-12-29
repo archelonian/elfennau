@@ -1,5 +1,10 @@
 @font-face {
-  font-family: cjk;
+  font-family: droid-jp;
+  src: url(../media/DroidSansJapanese.ttf);
+}
+
+@font-face {
+  font-family: elf-cjk;
   src: url(../media/ElfennauCJK.ttf);
 }
 
@@ -65,5 +70,5 @@ body {
 }
 
 .cjk {
-  font-family: cjk "Droid Sans Japanese" sans-serif;
+  font-family: cjk, elf-jp, sans-serif;
 }
