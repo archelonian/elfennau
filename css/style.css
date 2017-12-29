@@ -65,5 +65,5 @@ body {
 }
 
 .cjk {
-  font-family: cjk "Droid Sans Japanese" sans-serif;
+  font-family: cjk, "Droid Sans Japanese", sans-serif;
 }
