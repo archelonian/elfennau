@@ -100,26 +100,26 @@
           <tr>
             <td>Morrigan</td>
             <td>365 days</td>
-            <td>6 &middot; 60 + 5</td>
+            <td>6 &middot; (2 &middot; 30) + 5</td>
             <td>The Ephemeral Beasts</td>
           </tr>
           <tr>
             <td>Nuada</td>
             <td>687 days</td>
-            <td>7 &middot; 98 + 1</td>
+            <td>7 &middot; (7 &middot; 14) + 1</td>
             <td>We do not know.</td>
           </tr>
           <tr>
             <td>Dagda</td>
             <td>4336 days</td>
-            <td>8 &middot; (2 &middot; (136 + 135))</td>
+            <td>8 &middot; (2 &middot; 135 &frac12;)</td>
             <td>We do not know.</td>
           </tr>
           <tr>
             <td>Bres</td>
             <td>10759 days</td>
             <td>9 &middot; (1195 &frac12;)</td>
-            <td>The Hot Birds</td>
+            <td>We do not know.</td>
           </tr>
         </table>
       </div>
