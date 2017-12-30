@@ -71,7 +71,7 @@ body {
   padding-left: 0em;
   padding-right: 0.75em;
 }
-
+/*
 #content ol.ol-2col {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -89,7 +89,7 @@ body {
   -moz-column-count: 4;
   column-count: 4;
 }
-
+*/
 #content mark {
   font-weight: bold;
   font-variant: small-caps;
