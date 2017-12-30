@@ -51,12 +51,20 @@ body {
   margin-right: auto;
 }
 
+#content table.no-head-bold th {
+  font-weight: normal;
+}
+
+#content table.no-head-bold th {
+  font-weight: normal;
+}
+
 #content ol {
   margin: 0;
 }
 
 #content ol li {
-  padding-right: 0.5em;
+  padding-right: 0.75em;
 }
 
 #content ol.ol-2col {

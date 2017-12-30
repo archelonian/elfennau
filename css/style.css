@@ -51,6 +51,14 @@ body {
   margin-right: auto;
 }
 
+#content table.no-head-bold th {
+  font-weight: normal;
+}
+
+#content table.no-head-bold th:first-child {
+  font-weight: bold;
+}
+
 #content ol {
   margin: 0;
 }
