@@ -63,7 +63,7 @@ body {
 }
 
 #content table.lastcol-list tr:last-child th, #content table.lastcol-list tr:last-child td {
-  min-width: 50%;
+  width: 50%;
 }
 
 #content ol {
