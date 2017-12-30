@@ -14,7 +14,7 @@ body {
 }
 
 #container {
-  width: 798px;
+  max-width: 798px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
@@ -55,7 +55,7 @@ body {
   font-weight: normal;
 }
 
-#content table.no-head-bold th:first-child {
+#content table.no-head-bold tr:first-child th {
   font-weight: bold;
 }
 
