@@ -1,4 +1,5 @@
 /* #Ctrl-Mayus-M para abrir Modo Adaptivo */
+/*                 `ch` significa `chode` */
 
 @font-face {
   font-family: droid-jp;
@@ -16,7 +17,7 @@ body {
 }
 
 #container {
-  max-width: 120ch;
+  max-width: 96ch;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
