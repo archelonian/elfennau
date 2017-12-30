@@ -52,6 +52,7 @@ body {
 #content table.center {
   margin-left: auto;
   margin-right: auto;
+  width: 96%;
 }
 
 #content table.no-head-bold th {
@@ -68,7 +69,7 @@ body {
 
 #content ol {
   margin: 0;
-  column-width: 7em;
+  column-width: 6em;
 }
 
 #content ol li {

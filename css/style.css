@@ -54,6 +54,10 @@ body {
   margin-right: auto;
 }
 
+#content table.stretch {
+  width: 96%;
+}
+
 #content table.no-head-bold th {
   font-weight: normal;
 }
