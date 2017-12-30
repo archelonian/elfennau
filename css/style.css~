@@ -2,11 +2,6 @@
 /*                 `ch` significa `chode` */
 
 @font-face {
-  font-family: droid-sans;
-  src: url(../media/DroidSans.ttf);
-}
-
-@font-face {
   font-family: droid-jp;
   src: url(../media/DroidSansJapanese.ttf);
 }
@@ -69,6 +64,7 @@ body {
 
 #content ol {
   margin: 0;
+  column-width: 8em;
 }
 
 #content ol li {
