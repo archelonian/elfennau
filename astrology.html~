@@ -74,6 +74,7 @@
         </p>
         <table class = "center">
           <tr>
+            <th class = "cjk">4</th>
             <th>Sphere</th>
             <th>Period</th>
             <th>Division</th>
