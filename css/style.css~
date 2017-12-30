@@ -62,38 +62,20 @@ body {
   font-weight: bold;
 }
 
-#content table.lastcol-list tr:last-child th, #content table.lastcol-list tr:last-child td {
-  min-width: 50%;
+#content table.lastcol-list tr th:last-child, #content table.lastcol-list tr td:last-child {
+  min-width: 62.5%;
 }
 
 #content ol {
   margin: 0;
-  column-width: 8em;
+  column-width: 7em;
 }
 
 #content ol li {
   padding-left: 0em;
   padding-right: 0.75em;
 }
-/*
-#content ol.ol-2col {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-}
 
-#content ol.ol-3col {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-}
-
-#content ol.ol-4col {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-}
-*/
 #content mark {
   font-weight: bold;
   font-variant: small-caps;
