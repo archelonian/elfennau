@@ -107,7 +107,7 @@ body {
 }
 
 #content .days::after {
-  content: "days";
+  content: " days";
 }
 
 #content a {

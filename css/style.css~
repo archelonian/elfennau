@@ -103,6 +103,10 @@ body {
 }
 
 #content .days {
+  text-align: right;
+}
+
+#content .days::after {
   content: "days";
 }
 
