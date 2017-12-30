@@ -50,7 +50,6 @@ body {
 }
 
 #content table.center {
-  width: 96%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -61,6 +60,10 @@ body {
 
 #content table.no-head-bold tr:first-child th {
   font-weight: bold;
+}
+
+#content table.lastcol-list tr:last-child th, #content table.lastcol-list tr:last-child td {
+  min-width: 50%;
 }
 
 #content ol {

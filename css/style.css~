@@ -62,6 +62,8 @@ body {
   font-weight: bold;
 }
 
+#content table.lastcol-list tr:last-child th, 
+
 #content ol {
   margin: 0;
   column-width: 8em;
