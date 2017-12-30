@@ -43,6 +43,35 @@ body {
   padding: 1em;
 }
 
+.ltr {
+  direction: rtl;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  text-align: center;
+}
+
+#content blockquote {
+  background: #dfdfdf;
+  font-size: 87.5%;
+  font-style: italic;
+  margin-left: 16%;
+  margin-right: 16%;
+  border-left: 8px solid #bfbfbf;
+  padding: 8px;
+}
+
+#content blockquote footer {
+  text-align: right;
+  font-style: normal;
+  margin-right: 2em;
+  font-size: 112.5%;
+}
+
+#content blockquote footer::after {
+  content: "\2014";
+}
+
 #content table, #content th, #content td {
   border-collapse: collapse;
   border: 1px solid #808080;
