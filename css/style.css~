@@ -141,5 +141,5 @@ body {
 }
 
 .cjk {
-  font-family: elf-cjk, droid-jp, sans-serif;
+  font-family: elfennau, droid-jp, sans-serif;
 }
