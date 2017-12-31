@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: elf-cjk;
-  src: url(../media/ElfennauCJK.ttf);
+  font-family: elfennau;
+  src: url(../media/Elfennau.ttf);
 }
 
 body {
@@ -43,7 +43,7 @@ body {
   padding: 1em;
 }
 
-.ltr {
+.rtl {
   direction: rtl;
 }
 

@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: elf-cjk;
-  src: url(../media/ElfennauCJK.ttf);
+  font-family: elfennau;
+  src: url(../media/Elfennau.ttf);
 }
 
 body {
@@ -141,5 +141,5 @@ body {
 }
 
 .cjk {
-  font-family: elf-cjk, droid-jp, sans-serif;
+  font-family: elfennau, droid-jp, sans-serif;
 }
