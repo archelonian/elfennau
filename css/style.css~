@@ -2,11 +2,6 @@
 /*                 `ch` significa `chode` */
 
 @font-face {
-  font-family: droid-jp;
-  src: url(../media/DroidSansJapanese.ttf);
-}
-
-@font-face {
   font-family: elfennau;
   src: url(../media/Elfennau.ttf);
 }
@@ -140,6 +135,6 @@ body {
   color: #b5bea2;
 }
 
-.cjk {
-  font-family: elfennau, droid-jp, sans-serif;
+.elf {
+  font-family: elfennau, sans-serif;
 }
