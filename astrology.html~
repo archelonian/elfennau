@@ -139,7 +139,7 @@
         <p>
         We will enumerate the properties of three. Do not tremble! Prepare yourself. The three represents two dimensions. Flatness and disparity. To a lesser extent than the two. For the two is line. Linearity and direction. The one is empty. The three is two. Then the four is three. A tetrahedron, the plant of Hellen did say. And thus we continue, but remember that the five represents transcendence. Thus it is connected with the <mark>staoniezh</mark>. For is this not also the fifth? No, it is not. I am terrified. The sixth is duality. Goodliness and might. We are jovial. Here and there, counterpart and refutation, and in the midst, centrality. Then the seventh represents itself. And lo, the seventh is, truly, alone.
         </p>
-        <h2>Ardsaothar (&#1488;&#1512;&#1491;&#64299;&#1493;&#1512;)</h2>
+        <h2>Ardsaothar (<span dir = "rtl">&#1488;&#1512;&#1491;&#64299;&#1493;&#1512;</span>)</h2>
         <blockquote>
           <p>
           "This disease will be the end of many of us, but not nearly all, and the dead will be commemorated and will struggle on with the living, and we are not going away. We won't die secret deaths anymore. The world only spins forward. We will be citizens. The time has come.
@@ -154,10 +154,12 @@
           And I bless you: More Life.
           </p>
           <p>
-          The <mark>&#1488;&#1512;&#1491;&#64299;&#1493;&#1512;</mark> Begins."
+          <mark dir = "rtl">&#1488;&#1512;&#1491;&#64299;&#1493;&#1512;</mark> Begins."
           </p>
-          <footer class = "rtl">
-            17:92 &#1511;&#1493;&#64298;&#1504;&#1512;
+          <footer>
+            <p>
+            <span dir = "rtl">&#1511;&#1493;&#64298;&#1504;&#1512;</span> 17:92
+            </p>
           </footer>
         </blockquote>
         <table>
@@ -167,9 +169,12 @@
           <p>
           The angel came to him and asked him to read. The Prophet (peace be upon him) replied, "I do not know how to read." The Prophet (peace be upon him) added, "The angel caught me forcefully and pressed me so hard that I could not bear it any more. He then released me and again asked me to read and I replied, "I do not know how to read." Thereupon he caught me again and pressed me a second time till I could not bear it any more. He then released me and again asked me to read but again I replied, "I do not know how to read." Thereupon he caught me for the third time and pressed me, and then released me and said, "Read in the name of your Lord, who has created all that exists, created man from a clot. Read! And youru Lord is the Most Generous."
           </p>
-          <p>
-          17:92 &#1511;&#1493;&#64298;&#1504;&#1512;
-          </p>
+          <footer>
+            <p>
+            Sahih al-Bukhari 3
+            </p>
+          </footer>
+        </blockquote>
       </div>
       <div id = "footer">
         &copy; 2017 Klaus Llwynog.

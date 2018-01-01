@@ -38,10 +38,6 @@ body {
   padding: 1em;
 }
 
-.rtl {
-  direction: rtl;
-}
-
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   text-align: center;
 }
@@ -57,13 +53,12 @@ body {
 }
 
 #content blockquote footer {
-  text-align: right;
   font-style: normal;
-  margin-right: 2em;
+  margin-left: 28em;
   font-size: 112.5%;
 }
 
-#content blockquote footer::after {
+#content blockquote footer p::before {
   content: "\2014";
 }
 
