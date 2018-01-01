@@ -54,7 +54,7 @@ body {
 
 #content blockquote footer {
   font-style: normal;
-  margin-left: 28em;
+  margin-left: 24em;
   font-size: 112.5%;
 }
 
@@ -132,4 +132,12 @@ body {
 
 .elf {
   font-family: elfennau, sans-serif;
+}
+
+.calign {
+  text-align: center;
+}
+
+.ralign {
+  text-align: right;
 }

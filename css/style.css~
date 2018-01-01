@@ -133,3 +133,11 @@ body {
 .elf {
   font-family: elfennau, sans-serif;
 }
+
+.calign {
+  text-align: center;
+}
+
+.ralign {
+  text-align: right;
+}
