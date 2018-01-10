@@ -100,7 +100,10 @@ body {
 }
 
 #content mark {
+  font-style: normal;
   font-weight: bold;
+  font-size: 125%;
+  line-height: 0px;
   font-variant: small-caps;
   background: inherit;
   color: 000000;
