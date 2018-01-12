@@ -3,48 +3,39 @@
   <head>
     <meta charset = "utf-8" />
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/whiskey.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/pretty-checkbox.min.css" />
     <title>Whiskey: A Switchboard for Phonological Features</title>
   </head>
   <body>
     <div id = "container">
       <div id = "header">
-        <h1>Phonological F</h1>
+        <h1>Whiskey</h1>
       </div>
       <div id = "content">
-        <blockquote>
-          <p>
-          A certain goodly teaching of the draoi, who knew the oak tree as the earth knew life, and who knew the beech tree as the earth knew the wreath-martyr (<mark>&#1502;&#1512;&#1499;&#1512;&#1504;&#1490;</mark>), for there is only beshedding within <mark>demiourgos</mark>.
-          </p>
-          <p>
-          And it came to pass one day that the draoi happened upon a great coiden-tree, with a great multitude of citrus fruit upon its branches. And lo, I saw that the draoi received its essence and I was filled with a great curiosity, and I asked unto the draoi, Master, master, How was this fruit borne and what is its emanation, for verily I can see that you receive its essence and yea, it must surely be of goodliest frume.
-          </p>
-          <p>
-          And behold, I became frightened, for in that moment the draoi spoke unto me, saying, Do you not already see and understand the magnificent essence of the citrus fruit, and the breath it imparts into every living thing and beast, but lo, I did not see and I did not understand.
-          </p>
-          <p>
-          And I said unto the draoi, If it pleases you, reveal unto me the mathematics of the citrus fruit, so that I may understand and become like you, and ekewise that whosoever beholds also the mathematics of the citrus fruit may understand and become like you.
-          </p>
-          <p>
-          Then the draoi began to teach, and I began to write.
-          </p>
-          <footer>
-            <p>
-            1 Jasaw Chan Kawiil 2:24
-            </p>
-          </footer>
-        </blockquote>
-        <p>
-        Behold, it is known that the citrus fruit is the most potent of all fruits, for it is the progenitor of all fruits. Behold, it is through the citrus that all things take form and are given breath and life, and it is through the citrus that all things return to this earth from whence they came, for the citrus is the mightiest emanation of the earth, but not of sea or lyft, for threefold are the emanations of this lowly ring. Then observe the fourfold manifestation of citrus, from whence all other citrus finds its essence, and from whence goodly alzibhan may be obtained, and lo, perhaps even ardsaothar, that we may oversty from all drwggish things.
-        </p>
-        <p>
-        You have heard it said that the fourfold manifestation of citrus is pomelo, mandarin, citron, and papeda. You have heard it said that the papeda is inferior to the other manifestations, for its miserable rebellion damned it to eternal smallishness. You have heard it said that the essence of citrus is flavour, yea, the pleasures of the tongue, which interferes with the sevenfold opening from whence comes gwerin strength.
-        </p>
-        <p>
-        But lo, your eyes and your heart have been closed by the wicked. Truly, the citrus is not a deceitful, earthlishbound emanation, but it is the embodiment of process and of change, of variation and alternation, and through the citrus do all transfigurations occur. The coward fears the new and embrace the old, for the coward is lost in eir earthly ways and does not understand the transience of this fleshtide and this fleshlish form.
-        </p>
-        <p>
-        Behold, then, for I say unto you, this is the fourfold manifestation of citrus.
-        </p>
+        <form>
+          <h4>Class features</h4>
+          <div class = "pretty p-primary p-switch">
+            <input type = "checkbox" id = "cons" /><div class = "state p-primary"><label>Consonantal</label></div>
+          </div>
+          <div class = "pretty p-primary p-switch">
+            <input type = "checkbox" id = "son" /><div class = "state p-primary"><label>Sonorant</label></div>
+          </div>
+          <div class = "pretty p-primary p-switch">
+            <input type = "checkbox" id = "syll" /><div class = "state p-primary"><label>Syllabic</label></div>
+          </div>
+
+          <h4>Laryngeal features</h4>
+          <div class = "pretty p-primary p-switch">
+            <input type = "checkbox" id = "voice" /><div class = "state p-success"><label>Voice</label></div>
+          </div>
+          <div class = "pretty p-primary p-switch">
+            <input type = "checkbox" id = "sg" /><div class = "state p-success"><label>Spread Glottis</label></div>
+          </div>
+          <div class = "pretty p-primary p-switch">
+            <input type = "checkbox" id = "cg" /><div class = "state p-success"><label>Constricted Glottis</label></div>
+          </div>
+        </form>
       </div>
       <div id = "footer">
         &copy; 2017 Klaus Llwynog.

@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+h4 {
+  margin: 0;
+  padding: 0.5em;
+  text-align: left;
+}
+
+form {
+  width: 25%;
+}
+
+.pretty {
+  padding: 0 0.5em 0 0.5em;
+  margin: 0.25em 0 0.25em 0;
+}
