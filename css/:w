@@ -26,19 +26,9 @@ body {
 
 .group {
   display: inline-block;
-  border: solid 1.5px black;
-  border-radius: 12px;
-  background: white;
-  color: #ababab;
+  border: solid 2px black;
+  border-radius: 16px;
 }
-
-.feature {
-  display: inline-block;
-  padding-left: 6px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
 
 label + input[type = radio] + label {
 }
@@ -56,8 +46,7 @@ label {
 }
 
 input[type = radio]:checked + label {
-  color: black;
-  font-weight: bold;
+  color: grey;
 }
 
 tr:first-child th {

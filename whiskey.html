@@ -4,7 +4,6 @@
     <meta charset = "utf-8" />
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
     <link rel = "stylesheet" type = "text/css" href = "css/whiskey.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/pretty-checkbox.min.css" />
     <title>Whiskey: A Switchboard for Phonological Features</title>
   </head>
   <body>
@@ -13,29 +12,174 @@
         <h1>Whiskey</h1>
       </div>
       <div id = "content">
-        <form>
-          <h4>Class features</h4>
-          <div class = "pretty p-primary p-switch">
-            <input type = "checkbox" id = "cons" /><div class = "state p-primary"><label>Consonantal</label></div>
-          </div>
-          <div class = "pretty p-primary p-switch">
-            <input type = "checkbox" id = "son" /><div class = "state p-primary"><label>Sonorant</label></div>
-          </div>
-          <div class = "pretty p-primary p-switch">
-            <input type = "checkbox" id = "syll" /><div class = "state p-primary"><label>Syllabic</label></div>
-          </div>
+        <div id = "switchboard">
+          <form>
+            <div class = "group cons">
+              <input type = "radio" name = "cons" id = "cons-m"><label for = "cons-m">&minus;</label>
+              <input type = "radio" name = "cons" id = "cons-0" checked = "checked"><label for = "cons-0">&plusmn;</label>
+              <input type = "radio" name = "cons" id = "cons-p"><label for = "cons-p">&plus;</label>
+            </div>
+            <span class = "feature">Consonantal</span>
 
-          <h4>Laryngeal features</h4>
-          <div class = "pretty p-primary p-switch">
-            <input type = "checkbox" id = "voice" /><div class = "state p-success"><label>Voice</label></div>
-          </div>
-          <div class = "pretty p-primary p-switch">
-            <input type = "checkbox" id = "sg" /><div class = "state p-success"><label>Spread Glottis</label></div>
-          </div>
-          <div class = "pretty p-primary p-switch">
-            <input type = "checkbox" id = "cg" /><div class = "state p-success"><label>Constricted Glottis</label></div>
-          </div>
-        </form>
+            <div class = "group son">
+              <input type = "radio" name = "son" id = "son-m"><label for = "son-m">&minus;</label>
+              <input type = "radio" name = "son" id = "son-0" checked = "checked"><label for = "son-0">&plusmn;</label>
+              <input type = "radio" name = "son" id = "son-p"><label for = "son-p">&plus;</label>
+            </div>
+            <span class = "feature">Sonorant</span>
+
+            <div class = "group syll">
+              <input type = "radio" name = "syll" id = "syll-m"><label for = "syll-m">&minus;</label>
+              <input type = "radio" name = "syll" id = "syll-0" checked = "checked"><label for = "syll-0">&plusmn;</label>
+              <input type = "radio" name = "syll" id = "syll-p"><label for = "syll-p">&plus;</label>
+            </div>
+            <span class = "feature">Syllabic</span>
+          </form>
+        </div>
+        <div id = "ipa-chart">
+          <table>
+            <tr>
+              <th></th>
+              <th><span class = "bro">&nbsp;</span>Labiolabial</th>
+              <th><span class = "bro">&nbsp;</span>Labiodental</th>
+              <th><span class = "bro">&nbsp;</span>Dental</th>
+              <th><span class = "bro">&nbsp;</span>Alveolar</th>
+              <th><span class = "bro">&nbsp;</span>Retroflex</th>
+              <th><span class = "bro">&nbsp;</span>Postalveolar</th>
+              <th><span class = "bro">&nbsp;</span>Palatal</th>
+              <th><span class = "bro">&nbsp;</span>Velar</th>
+              <th><span class = "bro">&nbsp;</span>Uvular</th>
+              <th><span class = "bro">&nbsp;</span>Pharyngeal</th>
+              <th><span class = "bro">&nbsp;</span>Glottal</th>
+            </tr>
+            <tr>
+              <th>Plosive</th>
+              <td><span class = "wbp">p</span> <span class = "vbp">b</span></td>
+              <td></td>
+              <td></td>
+              <td><span class = "wap">t</span> <span class = "vap">d</span></td>
+              <td><span class = "wrp">&#648;</span> <span class = "vrp">&#598;</span></td>
+              <td></td>
+              <td><span class = "wpp">c</span> <span class = "vpp">&#607;</span></td>
+              <td><span class = "wvp">k</span> <span class = "vvp">g</span></td>
+              <td><span class = "wup">q</span> <span class = "vup">g</span></td>
+              <td></td>
+              <td><span class = "wgp">&#660;</span></td>
+            </tr>
+            <tr>
+              <th>Nasal</th>
+              <td><span class = "vbn">m</span></td>
+              <td><span class = "vln">&#625;</span></td>
+              <td></td>
+              <td><span class = "van">n</span></td>
+              <td><span class = "vrn">&#627;</span></td>
+              <td></td>
+              <td><span class = "vpn">&#626;</span></td>
+              <td><span class = "vvn">&#331;</span></td>
+              <td><span class = "vun">n</span></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Trill</th>
+              <td><span class = "vbr">b</span></td>
+              <td></td>
+              <td></td>
+              <td><span class = "var">r</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class = "vur">r</span></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Tap / Flap</th>
+              <td></td>
+              <td><span class = "vlt">&#11377;</span></td>
+              <td></td>
+              <td><span class = "vat">&#638;</span></td>
+              <td><span class = "vrt">&#637;</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Fricative</th>
+              <td><span class = "wbf">&beta;</span> <span class = "vbf">&#632;</span></td>
+              <td><span class = "wlf">f</span> <span class = "vlf">v</span></td>
+              <td><span class = "wdf">&theta;</span> <span class = "vdf">&eth;</span></td>
+              <td><span class = "waf">s</span> <span class = "vaf">z</span></td>
+              <td><span class = "wrf">&#632;</span> <span class = "vrf">&#656;</span></td>
+              <td><span class = "wqf">&#643;</span> <span class = "vqf">&#658;</span></td>
+              <td><span class = "wpf">&ccedil;</span> <span class = "vpf">&#669;</span></td>
+              <td><span class = "wvf">x</span> <span class = "vvf">&#611;</span></td>
+              <td><span class = "wuf">&chi;</span> <span class = "vuf">&#641;</span></td>
+              <td><span class = "wff">&#295;</span> <span class = "vff">&#661;</span></td>
+              <td><span class = "wgf">h</span> <span class = "vgf">&#614;</span></td>
+            </tr>
+            <tr>
+              <th>Lateral Fricative</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class = "waz">&#620;</span> <span class = "vaz">&#622;</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Approximant</th>
+              <td></td>
+              <td><span class = "vla">&#651;</span></td>
+              <td></td>
+              <td><span class = "vaa">&#633;</span></td>
+              <td><span class = "vra">&#635;</span></td>
+              <td></td>
+              <td><span class = "vpa">j</span></td>
+              <td><span class = "vva">&#624;</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Lateral Approximant</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class = "val">l</span></td>
+              <td><span class = "vrl">&#621;</span></td>
+              <td></td>
+              <td><span class = "vpl">&#654;</span></td>
+              <td><span class = "vvl">l</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Labial Approximant</th>
+              <td><span class = "wbz">&#653;</span> <span class = "vbz">w</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span class = "vpz">&#613;</span></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div id = "footer">
         &copy; 2017 Klaus Llwynog.
