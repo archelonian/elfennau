@@ -12,29 +12,173 @@
         <h1>Whiskey</h1>
       </div>
       <div id = "content">
-        <div id = "switchboard">
-          <form>
-            <div class = "group cons">
-              <input type = "radio" name = "cons" id = "cons-m"><label for = "cons-m">&minus;</label>
-              <input type = "radio" name = "cons" id = "cons-0" checked = "checked"><label for = "cons-0">&plusmn;</label>
-              <input type = "radio" name = "cons" id = "cons-p"><label for = "cons-p">&plus;</label>
-            </div>
-            <span class = "feature">Consonantal</span>
+        <div class = "switchboard">
+          <div class = "group cons">
+            <input type = "radio" name = "cons" id = "cons-m"><label for = "cons-m">&minus;</label>
+            <input type = "radio" name = "cons" id = "cons-0" checked = "checked"><label for = "cons-0">&plusmn;</label>
+            <input type = "radio" name = "cons" id = "cons-p"><label for = "cons-p">&plus;</label>
+          </div>
+          <span class = "feature">Consonantal</span><br />
 
-            <div class = "group son">
-              <input type = "radio" name = "son" id = "son-m"><label for = "son-m">&minus;</label>
-              <input type = "radio" name = "son" id = "son-0" checked = "checked"><label for = "son-0">&plusmn;</label>
-              <input type = "radio" name = "son" id = "son-p"><label for = "son-p">&plus;</label>
-            </div>
-            <span class = "feature">Sonorant</span>
+          <div class = "group son">
+            <input type = "radio" name = "son" id = "son-m"><label for = "son-m">&minus;</label>
+            <input type = "radio" name = "son" id = "son-0" checked = "checked"><label for = "son-0">&plusmn;</label>
+            <input type = "radio" name = "son" id = "son-p"><label for = "son-p">&plus;</label>
+          </div>
+          <span class = "feature">Sonorant</span><br />
 
-            <div class = "group syll">
-              <input type = "radio" name = "syll" id = "syll-m"><label for = "syll-m">&minus;</label>
-              <input type = "radio" name = "syll" id = "syll-0" checked = "checked"><label for = "syll-0">&plusmn;</label>
-              <input type = "radio" name = "syll" id = "syll-p"><label for = "syll-p">&plus;</label>
-            </div>
-            <span class = "feature">Syllabic</span>
-          </form>
+          <div class = "group syll">
+            <input type = "radio" name = "syll" id = "syll-m"><label for = "syll-m">&minus;</label>
+            <input type = "radio" name = "syll" id = "syll-0" checked = "checked"><label for = "syll-0">&plusmn;</label>
+            <input type = "radio" name = "syll" id = "syll-p"><label for = "syll-p">&plus;</label>
+          </div>
+          <span class = "feature">Syllabic</span><br />
+          <hr />
+
+          <div class = "group voice">
+            <input type = "radio" name = "voice" id = "voice-m"><label for = "voice-m">&minus;</label>
+            <input type = "radio" name = "voice" id = "voice-0" checked = "checked"><label for = "voice-0">&plusmn;</label>
+            <input type = "radio" name = "voice" id = "voice-p"><label for = "voice-p">&plus;</label>
+          </div>
+          <span class = "feature">Voice</span><br />
+
+          <div class = "group sg">
+            <input type = "radio" name = "sg" id = "sg-m"><label for = "sg-m">&minus;</label>
+            <input type = "radio" name = "sg" id = "sg-0" checked = "checked"><label for = "sg-0">&plusmn;</label>
+            <input type = "radio" name = "sg" id = "sg-p"><label for = "sg-p">&plus;</label>
+          </div>
+          <span class = "feature">Spread Glottis</span><br />
+
+          <div class = "group cg">
+            <input type = "radio" name = "cg" id = "cg-m"><label for = "cg-m">&minus;</label>
+            <input type = "radio" name = "cg" id = "cg-0" checked = "checked"><label for = "cg-0">&plusmn;</label>
+            <input type = "radio" name = "cg" id = "cg-p"><label for = "cg-p">&plus;</label>
+          </div>
+          <span class = "feature">Constr. Glottis</span><br />
+          <hr />
+
+          <div class = "group cont">
+            <input type = "radio" name = "cont" id = "cont-m"><label for = "cont-m">&minus;</label>
+            <input type = "radio" name = "cont" id = "cont-0" checked = "checked"><label for = "cont-0">&plusmn;</label>
+            <input type = "radio" name = "cont" id = "cont-p"><label for = "cont-p">&plus;</label>
+          </div>
+          <span class = "feature">Continuant</span><br />
+
+          <div class = "group str">
+            <input type = "radio" name = "str" id = "str-m"><label for = "str-m">&minus;</label>
+            <input type = "radio" name = "str" id = "str-0" checked = "checked"><label for = "str-0">&plusmn;</label>
+            <input type = "radio" name = "str" id = "str-p"><label for = "str-p">&plus;</label>
+          </div>
+          <span class = "feature">Strident</span><br />
+
+          <div class = "group lat">
+            <input type = "radio" name = "lat" id = "lat-m"><label for = "lat-m">&minus;</label>
+            <input type = "radio" name = "lat" id = "lat-0" checked = "checked"><label for = "lat-0">&plusmn;</label>
+            <input type = "radio" name = "lat" id = "lat-p"><label for = "lat-p">&plus;</label>
+          </div>
+          <span class = "feature">Lateral</span><br />
+
+          <div class = "group del">
+            <input type = "radio" name = "del" id = "del-m"><label for = "del-m">&minus;</label>
+            <input type = "radio" name = "del" id = "del-0" checked = "checked"><label for = "del-0">&plusmn;</label>
+            <input type = "radio" name = "del" id = "del-p"><label for = "del-p">&plus;</label>
+          </div>
+          <span class = "feature">Del. Release</span><br />
+
+          <div class = "group nas">
+            <input type = "radio" name = "nas" id = "nas-m"><label for = "nas-m">&minus;</label>
+            <input type = "radio" name = "nas" id = "nas-0" checked = "checked"><label for = "nas-0">&plusmn;</label>
+            <input type = "radio" name = "nas" id = "nas-p"><label for = "nas-p">&plus;</label>
+          </div>
+          <span class = "feature">Nasal</span><br />
+        </div>
+        <div class = "switchboard">
+          <div class = "group lab">
+            <input type = "radio" name = "lab" id = "lab-m"><label for = "lab-m">&minus;</label>
+            <input type = "radio" name = "lab" id = "lab-0" checked = "checked"><label for = "lab-0">&plusmn;</label>
+            <input type = "radio" name = "lab" id = "lab-p"><label for = "lab-p">&plus;</label>
+          </div>
+          <span class = "feature">Labial</span><br />
+
+          <div class = "group rnd">
+            <input type = "radio" name = "rnd" id = "rnd-m"><label for = "rnd-m">&minus;</label>
+            <input type = "radio" name = "rnd" id = "rnd-0" checked = "checked"><label for = "rnd-0">&plusmn;</label>
+            <input type = "radio" name = "rnd" id = "rnd-p"><label for = "rnd-p">&plus;</label>
+          </div>
+          <span class = "feature">Rounded</span><br />
+          <hr />
+
+          <div class = "group cor">
+            <input type = "radio" name = "cor" id = "cor-m"><label for = "cor-m">&minus;</label>
+            <input type = "radio" name = "cor" id = "cor-0" checked = "checked"><label for = "cor-0">&plusmn;</label>
+            <input type = "radio" name = "cor" id = "cor-p"><label for = "cor-p">&plus;</label>
+          </div>
+          <span class = "feature">Coronal</span><br />
+
+          <div class = "group ant">
+            <input type = "radio" name = "ant" id = "ant-m"><label for = "ant-m">&minus;</label>
+            <input type = "radio" name = "ant" id = "ant-0" checked = "checked"><label for = "ant-0">&plusmn;</label>
+            <input type = "radio" name = "ant" id = "ant-p"><label for = "ant-p">&plus;</label>
+          </div>
+          <span class = "feature">Anterior</span><br />
+
+          <div class = "group dist">
+            <input type = "radio" name = "dist" id = "dist-m"><label for = "dist-m">&minus;</label>
+            <input type = "radio" name = "dist" id = "dist-0" checked = "checked"><label for = "dist-0">&plusmn;</label>
+            <input type = "radio" name = "dist" id = "dist-p"><label for = "dist-p">&plus;</label>
+          </div>
+          <span class = "feature">Distributed</span><br />
+          <hr />
+
+          <div class = "group dors">
+            <input type = "radio" name = "dors" id = "dors-m"><label for = "dors-m">&minus;</label>
+            <input type = "radio" name = "dors" id = "dors-0" checked = "checked"><label for = "dors-0">&plusmn;</label>
+            <input type = "radio" name = "dors" id = "dors-p"><label for = "dors-p">&plus;</label>
+          </div>
+          <span class = "feature">Dorsal</span><br />
+
+          <div class = "group high">
+            <input type = "radio" name = "high" id = "high-m"><label for = "high-m">&minus;</label>
+            <input type = "radio" name = "high" id = "high-0" checked = "checked"><label for = "high-0">&plusmn;</label>
+            <input type = "radio" name = "high" id = "high-p"><label for = "high-p">&plus;</label>
+          </div>
+          <span class = "feature">High</span><br />
+
+          <div class = "group low">
+            <input type = "radio" name = "low" id = "low-m"><label for = "low-m">&minus;</label>
+            <input type = "radio" name = "low" id = "low-0" checked = "checked"><label for = "low-0">&plusmn;</label>
+            <input type = "radio" name = "low" id = "low-p"><label for = "low-p">&plus;</label>
+          </div>
+          <span class = "feature">Low</span><br />
+
+          <div class = "group back">
+            <input type = "radio" name = "back" id = "back-m"><label for = "back-m">&minus;</label>
+            <input type = "radio" name = "back" id = "back-0" checked = "checked"><label for = "back-0">&plusmn;</label>
+            <input type = "radio" name = "back" id = "back-p"><label for = "back-p">&plus;</label>
+          </div>
+          <span class = "feature">Back</span><br />
+
+          <div class = "group tense">
+            <input type = "radio" name = "tense" id = "tense-m"><label for = "tense-m">&minus;</label>
+            <input type = "radio" name = "tense" id = "tense-0" checked = "checked"><label for = "tense-0">&plusmn;</label>
+            <input type = "radio" name = "tense" id = "tense-p"><label for = "tense-p">&plus;</label>
+          </div>
+          <span class = "feature">Tense</span><br />
+          <hr />
+
+          <div class = "group phar">
+            <input type = "radio" name = "phar" id = "phar-m"><label for = "phar-m">&minus;</label>
+            <input type = "radio" name = "phar" id = "phar-0" checked = "checked"><label for = "phar-0">&plusmn;</label>
+            <input type = "radio" name = "phar" id = "phar-p"><label for = "phar-p">&plus;</label>
+          </div>
+          <span class = "feature">Pharyngeal</span><br />
+
+          <div class = "group atr">
+            <input type = "radio" name = "atr" id = "atr-m"><label for = "atr-m">&minus;</label>
+            <input type = "radio" name = "atr" id = "atr-0" checked = "checked"><label for = "atr-0">&plusmn;</label>
+            <input type = "radio" name = "atr" id = "atr-p"><label for = "atr-p">&plus;</label>
+          </div>
+          <span class = "feature">ATR</span><br />
         </div>
         <div id = "ipa-chart">
           <table>
@@ -114,7 +258,7 @@
               <td><span class = "wlf">f</span> <span class = "vlf">v</span></td>
               <td><span class = "wdf">&theta;</span> <span class = "vdf">&eth;</span></td>
               <td><span class = "waf">s</span> <span class = "vaf">z</span></td>
-              <td><span class = "wrf">&#632;</span> <span class = "vrf">&#656;</span></td>
+              <td><span class = "wrf">&#642;</span> <span class = "vrf">&#656;</span></td>
               <td><span class = "wqf">&#643;</span> <span class = "vqf">&#658;</span></td>
               <td><span class = "wpf">&ccedil;</span> <span class = "vpf">&#669;</span></td>
               <td><span class = "wvf">x</span> <span class = "vvf">&#611;</span></td>
@@ -151,7 +295,7 @@
               <td></td>
             </tr>
             <tr>
-              <th>Lateral Approximant</th>
+              <th>Lat. Approximant</th>
               <td></td>
               <td></td>
               <td></td>
@@ -165,7 +309,7 @@
               <td></td>
             </tr>
             <tr>
-              <th>Labial Approximant</th>
+              <th>Lab. Approximant</th>
               <td><span class = "wbz">&#653;</span> <span class = "vbz">w</span></td>
               <td></td>
               <td></td>
@@ -174,6 +318,20 @@
               <td></td>
               <td><span class = "vpz">&#613;</span></td>
               <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Affricate</th>
+              <td><span class = "wb2">p&#865;f</span></td>
+              <td></td>
+              <td></td>
+              <td><span class = "wa2">t&#865;s</span> <span class = "va2">d&#865;z</span></td>
+              <td></td>
+              <td><span class = "wr2">t&#865;&#643;</span> <span class = "vr2">d&#865;&#658;</span></td>
+              <td></td>
+              <td><span class = "wv2">k&#865;x</span></td>
               <td></td>
               <td></td>
               <td></td>

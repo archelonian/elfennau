@@ -15,13 +15,16 @@ body {
 #ipa-chart {
   float: right;
   display: block;
-  width: 70%;
+  width: 60%;
+  font-size: 90%;
 }
 
-#switchboard {
+.switchboard {
   float: left;
   display: block;
-  width: 30%;
+  width: 19%;
+  padding: 0.5%;
+  font-size: 75%;
 }
 
 .group {
@@ -51,7 +54,7 @@ input[type = radio] {
 
 label {
   display: inline-block;
-  padding: 2px 12px;
+  padding: 2px 6px;
   cursor: pointer;
 }
 
@@ -64,6 +67,10 @@ tr:first-child th {
   writing-mode: sideways-lr;
   margin-left: auto;
   margin-right: auto;
+}
+
+tr:last-child td {
+  font-size: 90%;
 }
 
 .bro {
@@ -88,10 +95,13 @@ th:first-child {
 .wbf, .wlf, .wdf, .waf, .wrf, .wqf, .wpf, .wvf, .wuf, .wff, .wgf,
 .wba, .wla, .wda, .waa, .wra, .wqa, .wpa, .wva, .wua, .wfa, .wga,
 .wbl, .wll, .wdl, .wal, .wrl, .wql, .wpl, .wvl, .wul, .wfl, .wgl,
-.wbz, .wlz, .wdz, .waz, .wrz, .wqz, .wpz, .wvz, .wuz, .wfz, .wgz {
+.wbz, .wlz, .wdz, .waz, .wrz, .wqz, .wpz, .wvz, .wuz, .wfz, .wgz,
+.wb2, .wl2, .wd2, .wa2, .wr2, .wq2, .wp2, .wv2, .wu2, .wf2, .wg2 {
+  display: inline-block;
   float: left;
-  text-align: left;
-  margin-right: 0.25em;
+  width: 30%;
+  text-align: right;
+  margin-left: 5%;
 }
 
 .vbp, .vlp, .vdp, .vap, .vrp, .vqp, .vpp, .vvp, .vup, .vfp, .vgp,
@@ -101,12 +111,19 @@ th:first-child {
 .vbf, .vlf, .vdf, .vaf, .vrf, .vqf, .vpf, .vvf, .vuf, .vff, .vgf,
 .vba, .vla, .vda, .vaa, .vra, .vqa, .vpa, .vva, .vua, .vfa, .vga,
 .vbl, .vll, .vdl, .val, .vrl, .vql, .vpl, .vvl, .vul, .vfl, .vgl,
-.vbz, .vlz, .vdz, .vaz, .vrz, .vqz, .vpz, .vvz, .vuz, .vfz, .vgz {
+.vbz, .vlz, .vdz, .vaz, .vrz, .vqz, .vpz, .vvz, .vuz, .vfz, .vgz,
+.vb2, .vl2, .vd2, .va2, .vr2, .vq2, .vp2, .vv2, .vu2, .vf2, .vg2 {
+  display: inline-block;
   float: right;
-  text-align: right;
-  margin-left: 0.25em;
+  width: 30%;
+  text-align: left;
+  margin-right: 5%;
 }
 
 .vup, .vun, .vbr, .vur, .vvl {
   font-variant: small-caps;
+}
+
+.vb2, .vl2, .vd2, .va2, .vr2, .vq2, .vp2, .vv2, .vu2, .vf2, .vg2 {
+  margin-right: 15%;
 }
