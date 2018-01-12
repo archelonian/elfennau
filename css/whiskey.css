@@ -32,7 +32,12 @@ body {
   border: solid 1.5px black;
   border-radius: 12px;
   background: white;
-  color: #ababab;
+  color: #d0d0d0;
+}
+
+.group:hover {
+  background: #f8f8f8;
+  color: #808080;
 }
 
 .feature {
