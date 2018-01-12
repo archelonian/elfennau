@@ -76,6 +76,40 @@ input[type = radio]:checked + label {
   font-weight: bold;
 }
 
+#content blockquote {
+  width: 100px;
+  margin: 0;
+  padding: 0 8px;
+  background: none;
+  border: none;
+  font-style: normal;
+  position: relative;
+}
+
+#content blockquote:before {
+  content: " ";
+  position: absolute;
+  border-left: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  padding: 4px;
+  top: -4px;
+  bottom: -4px;
+  left: 0px;
+}
+
+#content blockquote:after {
+  content: " ";
+  position: absolute;
+  border-right: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  padding: 4px;
+  top: -4px;
+  bottom: -4px;
+  right: 0px;
+}
+
 tr:first-child th {
   writing-mode: sideways-lr;
   margin-left: auto;
@@ -101,15 +135,15 @@ th:first-child {
   width: 3%;
 }
 
-.wbp, .wlp, .wdp, .wap, .wrp, .wqp, .wpp, .wvp, .wup, .wfp, .wgp,
-.wbn, .wln, .wdn, .wan, .wrn, .wqn, .wpn, .wvn, .wun, .wfn, .wgn,
-.wbr, .wlr, .wdr, .war, .wrr, .wqr, .wpr, .wvr, .wur, .wfr, .wgr,
-.wbt, .wlt, .wdt, .wat, .wrt, .wqt, .wpt, .wvt, .wut, .wft, .wgt,
-.wbf, .wlf, .wdf, .waf, .wrf, .wqf, .wpf, .wvf, .wuf, .wff, .wgf,
-.wba, .wla, .wda, .waa, .wra, .wqa, .wpa, .wva, .wua, .wfa, .wga,
-.wbl, .wll, .wdl, .wal, .wrl, .wql, .wpl, .wvl, .wul, .wfl, .wgl,
-.wbz, .wlz, .wdz, .waz, .wrz, .wqz, .wpz, .wvz, .wuz, .wfz, .wgz,
-.wb2, .wl2, .wd2, .wa2, .wr2, .wq2, .wp2, .wv2, .wu2, .wf2, .wg2 {
+#wbp, #wlp, #wdp, #wap, #wrp, #wqp, #wpp, #wvp, #wup, #wfp, #wgp,
+#wbn, #wln, #wdn, #wan, #wrn, #wqn, #wpn, #wvn, #wun, #wfn, #wgn,
+#wbr, #wlr, #wdr, #war, #wrr, #wqr, #wpr, #wvr, #wur, #wfr, #wgr,
+#wbt, #wlt, #wdt, #wat, #wrt, #wqt, #wpt, #wvt, #wut, #wft, #wgt,
+#wbf, #wlf, #wdf, #waf, #wrf, #wqf, #wpf, #wvf, #wuf, #wff, #wgf,
+#wba, #wla, #wda, #waa, #wra, #wqa, #wpa, #wva, #wua, #wfa, #wga,
+#wbl, #wll, #wdl, #wal, #wrl, #wql, #wpl, #wvl, #wul, #wfl, #wgl,
+#wbz, #wlz, #wdz, #waz, #wrz, #wqz, #wpz, #wvz, #wuz, #wfz, #wgz,
+#wb2, #wl2, #wd2, #wa2, #wr2, #wq2, #wp2, #wv2, #wu2, #wf2, #wg2 {
   display: inline-block;
   float: left;
   width: 30%;
@@ -117,15 +151,15 @@ th:first-child {
   margin-left: 5%;
 }
 
-.vbp, .vlp, .vdp, .vap, .vrp, .vqp, .vpp, .vvp, .vup, .vfp, .vgp,
-.vbn, .vln, .vdn, .van, .vrn, .vqn, .vpn, .vvn, .vun, .vfn, .vgn,
-.vbr, .vlr, .vdr, .var, .vrr, .vqr, .vpr, .vvr, .vur, .vfr, .vgr,
-.vbt, .vlt, .vdt, .vat, .vrt, .vqt, .vpt, .vvt, .vut, .vft, .vgt,
-.vbf, .vlf, .vdf, .vaf, .vrf, .vqf, .vpf, .vvf, .vuf, .vff, .vgf,
-.vba, .vla, .vda, .vaa, .vra, .vqa, .vpa, .vva, .vua, .vfa, .vga,
-.vbl, .vll, .vdl, .val, .vrl, .vql, .vpl, .vvl, .vul, .vfl, .vgl,
-.vbz, .vlz, .vdz, .vaz, .vrz, .vqz, .vpz, .vvz, .vuz, .vfz, .vgz,
-.vb2, .vl2, .vd2, .va2, .vr2, .vq2, .vp2, .vv2, .vu2, .vf2, .vg2 {
+#vbp, #vlp, #vdp, #vap, #vrp, #vqp, #vpp, #vvp, #vup, #vfp, #vgp,
+#vbn, #vln, #vdn, #van, #vrn, #vqn, #vpn, #vvn, #vun, #vfn, #vgn,
+#vbr, #vlr, #vdr, #var, #vrr, #vqr, #vpr, #vvr, #vur, #vfr, #vgr,
+#vbt, #vlt, #vdt, #vat, #vrt, #vqt, #vpt, #vvt, #vut, #vft, #vgt,
+#vbf, #vlf, #vdf, #vaf, #vrf, #vqf, #vpf, #vvf, #vuf, #vff, #vgf,
+#vba, #vla, #vda, #vaa, #vra, #vqa, #vpa, #vva, #vua, #vfa, #vga,
+#vbl, #vll, #vdl, #val, #vrl, #vql, #vpl, #vvl, #vul, #vfl, #vgl,
+#vbz, #vlz, #vdz, #vaz, #vrz, #vqz, #vpz, #vvz, #vuz, #vfz, #vgz,
+#vb2, #vl2, #vd2, #va2, #vr2, #vq2, #vp2, #vv2, #vu2, #vf2, #vg2 {
   display: inline-block;
   float: right;
   width: 30%;
@@ -133,10 +167,10 @@ th:first-child {
   margin-right: 5%;
 }
 
-.vup, .vun, .vbr, .vur, .vvl {
+#vup, #vun, #vbr, #vur, #vvl {
   font-variant: small-caps;
 }
 
-.vb2, .vl2, .vd2, .va2, .vr2, .vq2, .vp2, .vv2, .vu2, .vf2, .vg2 {
+#vb2, #vl2, #vd2, #va2, #vr2, #vq2, #vp2, #vv2, #vu2, #vf2, #vg2 {
   margin-right: 15%;
 }
