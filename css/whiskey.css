@@ -28,6 +28,10 @@ body {
 }
 
 .group {
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
   display: inline-block;
   border: solid 1.5px black;
   border-radius: 12px;
@@ -58,6 +62,10 @@ input[type = radio] {
 }
 
 label {
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
   display: inline-block;
   padding: 2px 6px;
   cursor: pointer;
