@@ -142,16 +142,16 @@ function update() {
         groups[i].style.background = "#ffffff";
         break;
       case "p":
-        groups[i].style.background = "#d0ffd0";
+        groups[i].style.background = "#d0d0ff";
         break;
     }
 
     if (fuckvalue == "m") {
-      output.push("&minus; " + features[i][1]);
+      output.push("<span class = \"minus\">&minus; " + features[i][1] + "</span>");
     } else if (fuckvalue == "p") {
-      output.push("&plus; " + features[i][1]);
+      output.push("<span class = \"plus\">&plus; " + features[i][1] + "</span>");
     } else if (fuckvalue == "0") {
-      output.push("&plusmn; " + features[i][1]);
+      output.push("<span class = \"plusmn\">&plusmn; " + features[i][1] + "</span>");
     }
 
   }
@@ -161,7 +161,7 @@ function update() {
 }
 
 function showBox(output) {
-  box = document.getElementById("box");
+  box = document.getElementById("little-box");
   box.innerHTML = "<p>";
 
   if (output.length > 0) {
