@@ -94,6 +94,11 @@ body {
   line-height: 0pt;
 }
 
+.email {
+  font-weight: bold;
+  color: #202060;
+}
+
 #ipa-chart {
   font-family: charis;
   float: right;
