@@ -119,25 +119,23 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                 ["va2", 2, 0, 0, 2, 0, 0, 3, 0, 0, 2, 0, 0, 1, 2, 2, 0, 0, 2, 0, 0, 2, 0, 0, 1],
                 ["wq2", 2, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 1, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 1],
                 ["vq2", 2, 0, 0, 2, 0, 0, 3, 0, 0, 2, 0, 0, 1, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 1],
-                ["wv2", 2, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 1, 1, 2, 2, 0, 0, 2, 0, 0, 1],
-                ]
+                ["wv2", 2, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 1, 1, 2, 2, 0, 0, 2, 0, 0, 1]];
 
-for (var i = 0; i < segments.length; i++) {
-  for (var j = 0; j < segments[i].length; j++) {
-    switch (segments[i][j]) {
-      case 0:
-      case 1:
-        segments[i][j] = "m";
-        break;
-//      case 1:
-//        segments[i][j] = "0";
-//        break;
-      case 2:
-        segments[i][j] = "p";
-        break;
-      case 3:
-        segments[i][j] = "b";
-        break;
+function init() {
+  for (var i = 0; i < segments.length; i++) {
+    for (var j = 0; j < segments[i].length; j++) {
+      switch (segments[i][j]) {
+        case 0:
+        case 1:
+          segments[i][j] = "m";
+          break;
+        case 2:
+          segments[i][j] = "p";
+          break;
+        case 3:
+          segments[i][j] = "b";
+          break;
+      }
     }
   }
 }
@@ -147,7 +145,7 @@ function update() {
   var output = [];
 
   for (var i = 0; i < features.length; i++) {
-    var value = document.querySelector('input[name = ' + features[i][0] + ']:checked').value;
+    var value = document.querySelector("input[name = " + features[i][0] + "]:checked").value;
     var fuckvalue = value[value.length - 1];
 
     features[i][2] = value;
@@ -216,4 +214,5 @@ function showChart() {
   }
 }
 
+init();
 update();
