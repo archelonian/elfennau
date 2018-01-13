@@ -205,13 +205,21 @@ function showChart() {
       if (!(features[j][2] === "0")) {
         if (!(segments[i][j + 1] === "b")) {
           if (!(features[j][2] === segments[i][j + 1])) {
-            console.log("hidden");
             seg.style.visibility = "hidden";
           }
         }
       }
     }
   }
+}
+
+function reset() {
+  for (var i = 0; i < features.length; i++) {
+    features[i][2] = "0";
+    document.getElementById(features[i][0] + "-0").checked = true;
+  }
+
+  update();
 }
 
 init();
