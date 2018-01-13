@@ -23,14 +23,22 @@ var features = [[ "cons",     "Consonantal", "0"],
                 [ "phar",      "Pharyngeal", "0"],
                 [  "atr",             "ATR", "0"]];
 
-//don't forget to add an extra feature for FRONT
 //                     Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi Lo Fr Ba Tn Ph AT
 var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
                 ["vbp", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
                 ["wap", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
                 ["vap", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
                 ["wrp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
-                ["vrp", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1]
+                ["vrp", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["wpp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 2, 0, 2, 0, 0, 0, 1],
+                ["vpp", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 0, 2, 0, 0, 0, 1],
+                ["wvp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 2, 0, 0, 1],
+                ["vvp", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 0, 0, 2, 0, 0, 1],
+                ["wup", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0, 2, 0, 0, 1],
+                ["vup", 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 2, 0, 0, 1],
+                ["wgp", 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
+
+                ["wgp", 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
                ];
 
 for (var i = 0; i < segments.length; i++) {
@@ -100,16 +108,16 @@ function showBox(output) {
 
 function showChart() {
   for (var i = 0; i < segments.length; i++) {
+    var seg = document.getElementById(segments[i][0]);
+
+    seg.style.visibility = "visible";
+  }
+
+  for (var i = 0; i < segments.length; i++) {
     for (var j = 0; j < features.length; j++) {
       var seg = document.getElementById(segments[i][0]);
-      if (features[j][2] === "0") {
-        seg.style.visibility = "visible";
-      } else {
-        console.log(features[j][2] + " " + segments[i][j + 1]);
-        if (features[j][2] === segments[i][j + 1]) {
-          console.log("visible");
-          seg.style.visibility = "visible";
-        } else {
+      if (!(features[j][2] === "0")) {
+        if (!(features[j][2] === segments[i][j + 1])) {
           console.log("hidden");
           seg.style.visibility = "hidden";
         }
