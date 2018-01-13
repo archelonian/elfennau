@@ -1,15 +1,38 @@
+<!--
+(C) 2018 Klaus Llwynog.
+
+This file is part of Whiskey.
+
+Whiskey is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Whiskey is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
 <!DOCTYPE html>
 <html lang = "es">
   <head>
     <meta charset = "utf-8" />
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
     <link rel = "stylesheet" type = "text/css" href = "css/whiskey.css" />
-    <title>Whiskey: A Switchboard for Phonological Features</title>
+    <title>Whiskey | Interactive Feature Switchboard</title>
   </head>
   <body>
     <div id = "container">
       <div id = "header">
-        <h1>Whiskey</h1>
+        <h1>Whiskey /</h1> <h2>Interactive Feature Switchboard</h2>
+        <p class = "be-small">&nbsp;</p>
+        <hr />
+        <p>
+        Whiskey is an interactive feature switchboard. Use the switchboard on the sinister side to select a set of phonological features, and the sounds with those features will appear on the dexter side.
+        </p>
       </div>
       <div id = "content">
         <div class = "switchboard">
@@ -353,7 +376,33 @@
         </div>
       </div>
       <div id = "footer">
-        &copy; 2017 - 2018 Klaus Llwynog.
+        <p>
+        <strong>Whence comes the source of this information?</strong>
+        </p>
+        <p>
+        The information is drawn from the 2011 edition of Jason Riggle's phonological features chart, with supplementary information drawn from <a href = "http://webservices.itcs.umich.edu/mediawiki/lingwiki/index.php/Segmental_Features_in_Phonology">this website that I found</a>.
+        </p>
+        <p>
+        <strong>Why aren't the inputs sanitised to prevent contradictory features (for example, [&minus;labial] and [&plus;rounded])?</strong>
+        </p>
+        <p>
+        I was going to, but it would take too much effort, so it's somewhat reliant on the user to not be a buffoon.
+        </p>
+        <p>
+        <strong>Is this application still in development?</strong>
+        </p>
+        <p>
+        This (12 January 2017) is the first release, but I'm planning to add vowel support, table-to-switchboard communication, and meta-documentation about each individual feature and segment.
+        </p>
+        <p>
+        <strong>Why is the name of this application &#132;Whiskey&#147;?</strong>
+        </p>
+        <p>
+        The English word &#132;whiskey&#147; derives from the Irish word &#132;uisce&#147; <span class = "charis">/&#618;&#643;c&#601;/</span>, meaning &#132;water&#147;. Varieties of water include the Oscan <strong>S.Pellegrino</strong> sparkling natural mineral water, whose only blemish is its ownership by the dreadful company <strong>Nestl&eacute;</strong>.
+        </p>
+        <p>
+        &copy; Copyright 2018 Klaus Llwynog.
+        </p>
       </div>
     </div>
   </body>

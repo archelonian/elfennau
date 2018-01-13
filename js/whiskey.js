@@ -1,3 +1,22 @@
+/*
+(C) 2018 Klaus Llwynog.
+
+This file is part of Whiskey.
+
+Whiskey is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Whiskey is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Whiskey.  If not, see <http://www.gnu.org/licenses/>
+*/
+
 var features = [[ "cons",         "Consonantal", "0"],
                 [  "son",            "Sonorant", "0"],
                 [ "syll",            "Syllabic", "0"],
@@ -51,7 +70,7 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                 ["vur", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 0, 0, 0, 2, 0, 0, 1],
 //                     Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi L1 Fr Ba Tn Ph AT
                 ["vlt", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
-                ["vat", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["vat", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
                 ["vrt", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
 //                     Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi L1 Fr Ba Tn Ph AT
                 ["wbf", 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],

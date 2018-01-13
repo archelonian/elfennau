@@ -1,3 +1,22 @@
+/*
+(C) 2018 Klaus Llwynog.
+
+This file is part of Whiskey.
+
+Whiskey is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Whiskey is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Whiskey.  If not, see <http://www.gnu.org/licenses/>
+*/
+
 @font-face {
   font-family: charis;
   src: url(../media/CharisSIL-R.ttf);
@@ -23,7 +42,16 @@ body {
   background: white;
   color: black;
   margin: 0;
-  padding: 1em;
+  padding: 1em 1em 0em 1em;
+  width: 40%;
+}
+
+#header p {
+  font-size: 87.5%;
+}
+
+#header .be-small {
+  font-size: 25%;
 }
 
 #content {
@@ -37,12 +65,22 @@ body {
   background: white;
   margin: 0;
   padding: 1em;
+  width: 40%;
 }
 
-#header h1 {
+#footer p {
+  font-size: 87.5%;
+}
+
+#footer .be-small {
+  font-size: 25%;
+}
+
+#header h1, h2 {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  display: inline;
 }
 
 #content h4 {
@@ -51,11 +89,16 @@ body {
   text-align: left;
 }
 
+.charis {
+  font-family: charis;
+  line-height: 0pt;
+}
+
 #ipa-chart {
   font-family: charis;
   float: right;
   display: block;
-  width: 52%;
+  width: 51%;
   font-size: 90%;
   margin-top: 16px;
 }
@@ -73,7 +116,7 @@ body {
 #box {
   float: left;
   display: block;
-  width: 12%;
+  width: 13%;
   margin: 0% 2.5%;
 }
 
@@ -86,12 +129,12 @@ body {
   border: solid 1.5px black;
   border-radius: 12px;
   background: white;
-  color: #d0d0d0;
+  color: #909090;
 }
 
 .group:hover {
   background: #f8f8f8;
-  color: #808080;
+  color: #606060;
 }
 
 .feature {
@@ -127,6 +170,7 @@ input[type = radio]:checked + label {
 }
 
 #box blockquote {
+  font-size: 87.5%;
   margin: 0;
   padding: 0 8px;
   background: none;
@@ -159,6 +203,33 @@ input[type = radio]:checked + label {
   right: 0px;
 }
 
+#content table, #content th, #content td {
+  border-collapse: collapse;
+  border: 1px solid #808080;
+  padding: 0.25em;
+}
+
+#content table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content table.stretch {
+  width: 96%;
+}
+
+#content table.no-head-bold th {
+  font-weight: normal;
+}
+
+#content table.no-head-bold tr:first-child th {
+  font-weight: bold;
+}
+
+#content table.lastcol-list tr th:last-child, #content table.lastcol-list tr td:last-child {
+  min-width: 62.5%;
+}
+
 tr:first-child th {
   writing-mode: sideways-lr;
   margin-left: auto;
@@ -184,9 +255,10 @@ th:first-child {
   width: 3%;
 }
 
- div.ant + span.feature, div.dist + span.feature,
-div.high + span.feature,  div.low + span.feature, div.front + span.feature, div.back + span.feature, div.tense + span.feature,
- div.atr + span.feature {
+div.rnd + span.feature,
+  div.ant + span.feature, div.dist + span.feature,
+ div.high + span.feature,  div.low + span.feature, div.front + span.feature, div.back + span.feature, div.tense + span.feature,
+  div.atr + span.feature {
   font-weight: normal;
 }
 
@@ -223,8 +295,8 @@ div.high + span.feature,  div.low + span.feature, div.front + span.feature, div.
   display: inline-block;
   float: left;
   width: 30%;
-  text-align: right;
-  margin-left: 5%;
+  text-align: center;
+  margin-left: 12%;
 }
 
 #vbp, #vlp, #vdp, #vap, #vrp, #vqp, #vpp, #vvp, #vup, #vfp, #vgp,
@@ -239,8 +311,8 @@ div.high + span.feature,  div.low + span.feature, div.front + span.feature, div.
   display: inline-block;
   float: right;
   width: 30%;
-  text-align: left;
-  margin-right: 5%;
+  text-align: center;
+  margin-right: 12%;
 }
 
 #vup, #vun, #vbr, #vur, #vvl {
