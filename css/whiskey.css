@@ -96,7 +96,17 @@ body {
 
 .email {
   font-weight: bold;
-  color: #202060;
+  color: #808;
+}
+
+a {
+  font-weight: bold;
+  color: #008;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #ipa-chart {

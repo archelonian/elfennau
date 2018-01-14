@@ -142,6 +142,31 @@ function init() {
       }
     }
   }
+
+  var symbols = document.getElementsByClassName("symbol");
+  for (var symbol of symbols) {
+    symbol.addEventListener('click', function(evt) { flip(evt); });
+  }
+}
+
+function flip(evt) {
+  var properties = evt.target.id;
+  var seg = -1;
+
+  for (var i = 0; i < segments.length; i++) {
+    if (segments[i][0] === properties) {
+      seg = i;
+      break;
+    }
+  }
+
+  for (var i = 0; i < features.length; i++) {
+    features[i][2] = segments[seg][i + 1];
+    console.log(features[i][2] + " " + segments[seg][i + 1]);
+    document.getElementById(features[i][0] + "-" + segments[seg][i + 1]).checked = true;
+  }
+
+  update();
 }
 
 function update() {
