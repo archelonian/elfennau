@@ -26,7 +26,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
   </head>
   <body>
     <div id = "container">
-      <div id = "header">
+      <div id = "header" class = "cell">
         <h1>Whiskey /</h1> <h2>Interactive Feature Switchboard</h2>
         <p class = "be-small">&nbsp;</p>
         <hr />
@@ -34,8 +34,8 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
         Whiskey is an interactive feature switchboard. Use the switchboard on the left-hand side to select a set of phonological features to see which segments have those features; or, select a segment to see which phonological features it has.
         </p>
       </div>
-      <div id = "content">
-        <div class = "switchboard">
+<!--      <div id = "cell content">-->
+        <div id = "switchboard1" class = "cell switchboard">
           <div class = "group cons">
             <input type = "radio" name = "cons" id = "cons-m" value = "m" onclick = "update()"><label for = "cons-m">&minus;</label>
             <input type = "radio" name = "cons" id = "cons-0" value = "0" onclick = "update()" checked = "checked"><label for = "cons-0">&plusmn;</label>
@@ -122,7 +122,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
           <input type = "checkbox" id = "hide" onclick = "hide()" /><label for = "hide">Hide unspecified features</label>
         </div>
 
-        <div class = "switchboard">
+        <div id = "switchboard2" class = "cell switchboard">
           <div class = "group lab">
             <input type = "radio" name = "lab" id = "lab-m" value = "m" onclick = "update()"><label for = "lab-m">&minus;</label>
             <input type = "radio" name = "lab" id = "lab-0" value = "0" onclick = "update()" checked = "checked"><label for = "lab-0">&plusmn;</label>
@@ -217,11 +217,11 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
           </div>
           <span class = "feature">ATR</span><br />
         </div>
-        <div id = "box">
+        <div id = "box" class = "cell">
           <blockquote id = "little-box">
           </blockquote>
         </div>
-        <div id = "ipa-chart">
+        <div id = "ipa-chart" class = "cell">
           <table id = "consonants">
             <tr>
               <th></th>
@@ -390,41 +390,41 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <th>High</th>
-              <td><span id = "000" class = "symbol">i</span></td>
-              <td><span id = "001" class = "symbol">y</span></td>
+              <td><span id = "v000" class = "symbol">i</span></td>
+              <td><span id = "v001" class = "symbol">y</span></td>
               <td></td>
               <td></td>
-              <td><span id = "020" class = "symbol">&#616;</span></td>
-              <td><span id = "021" class = "symbol">&#649;</span></td>
+              <td><span id = "v020" class = "symbol">&#616;</span></td>
+              <td><span id = "v021" class = "symbol">&#649;</span></td>
               <td></td>
               <td></td>
-              <td><span id = "040" class = "symbol">&#623;</span></td>
-              <td><span id = "041" class = "symbol">u</span></td>
+              <td><span id = "v040" class = "symbol">&#623;</span></td>
+              <td><span id = "v041" class = "symbol">u</span></td>
             </tr>
             <tr>
               <th>Near-High</th>
               <td></td>
               <td></td>
-              <td><span id = "110" class = "symbol">i</span></td>
-              <td><span id = "111" class = "symbol">y</span></td>
+              <td><span id = "v110" class = "symbol">i</span></td>
+              <td><span id = "v111" class = "symbol">y</span></td>
               <td></td>
               <td></td>
-              <td colspan = "2"><span id = "131" class = "symbol">&#650;</span></td>
+              <td colspan = "2"><span id = "v131" class = "symbol">&#650;</span></td>
               <td></td>
               <td></td>
             </tr>
             <tr>
               <th>Mid-High</th>
-              <td><span id = "200" class = "symbol">e</span></td>
-              <td><span id = "201" class = "symbol">&oslash;</span></td>
+              <td><span id = "v200" class = "symbol">e</span></td>
+              <td><span id = "v201" class = "symbol">&oslash;</span></td>
               <td></td>
               <td></td>
-              <td><span id = "220" class = "symbol">&#600;</span></td>
-              <td><span id = "221" class = "symbol">&#629;</span></td>
+              <td><span id = "v220" class = "symbol">&#600;</span></td>
+              <td><span id = "v221" class = "symbol">&#629;</span></td>
               <td></td>
               <td></td>
-              <td><span id = "240" class = "symbol">&#612;</span></td>
-              <td><span id = "241" class = "symbol">o</span></td>
+              <td><span id = "v240" class = "symbol">&#612;</span></td>
+              <td><span id = "v241" class = "symbol">o</span></td>
             </tr>
             <tr>
               <th>Mid</th>
@@ -432,7 +432,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
               <td></td>
               <td></td>
-              <td colspan = "2"><span id = "320" class = "symbol">&#601;</span></td>
+              <td colspan = "2"><span id = "v320" class = "symbol">&#601;</span></td>
               <td></td>
               <td></td>
               <td></td>
@@ -440,23 +440,23 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
             </tr>
             <tr>
               <th>Mid-Low</th>
-              <td><span id = "400" class = "symbol">&#603;</span></td>
-              <td><span id = "401" class = "symbol">&oelig;</span></td>
+              <td><span id = "v400" class = "symbol">&#603;</span></td>
+              <td><span id = "v401" class = "symbol">&oelig;</span></td>
               <td></td>
               <td></td>
-              <td><span id = "420" class = "symbol">&#604;</span></td>
-              <td><span id = "421" class = "symbol">&#606;</span></td>
+              <td><span id = "v420" class = "symbol">&#604;</span></td>
+              <td><span id = "v421" class = "symbol">&#606;</span></td>
               <td></td>
               <td></td>
-              <td><span id = "440" class = "symbol">&#652;</span></td>
-              <td><span id = "441" class = "symbol">&#596;</span></td>
+              <td><span id = "v440" class = "symbol">&#652;</span></td>
+              <td><span id = "v441" class = "symbol">&#596;</span></td>
             </tr>
             <tr>
               <th>Near-Low</th>
               <td></td>
               <td></td>
-              <td colspan = "2"><span id = "510" class = "symbol">&aelig;</span></td>
-              <td colspan = "2"><span id = "520" class = "symbol">&#592;</span></td>
+              <td colspan = "2"><span id = "v510" class = "symbol">&aelig;</span></td>
+              <td colspan = "2"><span id = "v520" class = "symbol">&#592;</span></td>
               <td></td>
               <td></td>
               <td></td>
@@ -468,18 +468,18 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
               <td></td>
               <td></td>
-              <td><span id = "620" class = "symbol">a</span></td>
-              <td><span id = "621" class = "symbol">&oelig;</span></td>
+              <td><span id = "v620" class = "symbol">a</span></td>
+              <td><span id = "v621" class = "symbol">&oelig;</span></td>
               <td></td>
               <td></td>
-              <td><span id = "640" class = "symbol">&#593;</span></td>
-              <td><span id = "641" class = "symbol">&#594;</span></td>
+              <td><span id = "v640" class = "symbol">&#593;</span></td>
+              <td><span id = "v641" class = "symbol">&#594;</span></td>
             </tr>
           </table>
           <script src = "js/whiskey.js"></script>
         </div>
-      </div>
-      <div id = "footer">
+<!--      </div>-->
+      <div id = "footer" class = "cell">
         <p>
         <strong>v0.2 (13 January 2018) </strong> Added &bdquo;reset&ldquo; button and &bdquo;hide&ldquo; button; added feature that greys out segments which lack an inapplicable feature (e.g. labials are greyed out if [&minus;anterior] is selected); added table-to-switchboard communication.
         </p>

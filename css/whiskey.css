@@ -29,21 +29,60 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>
 
 body {
   font-family: charter;
-  background: white;
+  background: #fbfbf4;
 }
 
 #container {
-  max-width: 100%;
-  margin: 0;
-  border: none;
+  display: grid;
+  grid-template-rows: 0.5fr 3fr 4fr;
+  grid-template-columns: 0.8fr 0.8fr 0.75fr 3fr;
+}
+
+.cell {
+  padding: 6px;
 }
 
 #header {
-  background: white;
-  color: black;
-  margin: 0;
-  padding: 1em 1em 0em 1em;
-  width: 40%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#switchboard1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#switchboard2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#box {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#ipa-chart {
+  padding-left: 16px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+#footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 #header p {
@@ -52,20 +91,6 @@ body {
 
 #header .be-small {
   font-size: 25%;
-}
-
-#content {
-  background: white;
-  margin: 0;
-  padding: 0.5em;
-  overflow: auto;
-}
-
-#footer {
-  background: white;
-  margin: 0;
-  padding: 1em;
-  width: 40%;
 }
 
 #footer p {
@@ -81,12 +106,6 @@ body {
   padding: 0;
   font-weight: normal;
   display: inline;
-}
-
-#content h4 {
-  margin: 0;
-  padding: 0.5em;
-  text-align: left;
 }
 
 .charis {
@@ -112,27 +131,15 @@ a:hover {
 #ipa-chart {
   font-family: charis;
   float: right;
-  display: block;
-  width: 51%;
   font-size: 90%;
-  margin-top: 16px;
 }
 
 .switchboard {
-  float: left;
-  display: block;
-  width: 14%;
   font-weight: bold;
   font-size: 75%;
-  padding: 0.5%;
-  margin-top: 8px;
 }
 
 #box {
-  float: left;
-  display: block;
-  width: 13%;
-  margin: 0% 2.5%;
 }
 
 .group {
@@ -308,36 +315,35 @@ input[type = radio]:checked + label {
   right: 0px;
 }
 
-#content table, #content th, #content td {
+table, th, td {
   border-collapse: collapse;
   border: 1px solid #808080;
-  padding: 0.25em;
 }
 
-#content table.center {
+table.center {
   margin-left: auto;
   margin-right: auto;
 }
 
-#content table.stretch {
+table.stretch {
   width: 96%;
 }
 
-#content table.no-head-bold th {
+table.no-head-bold th {
   font-weight: normal;
 }
 
-#content table.no-head-bold tr:first-child th {
+table.no-head-bold tr:first-child th {
   font-weight: bold;
 }
 
-#content table.lastcol-list tr th:last-child, #content table.lastcol-list tr td:last-child {
+table.lastcol-list tr th:last-child, table.lastcol-list tr td:last-child {
   min-width: 62.5%;
 }
 
 .bro {
   display: block;
-  font-size: 62.5%;
+  font-size: 80%;
 }
 
 th {
@@ -345,10 +351,14 @@ th {
   font-size: 75%;
 }
 
+th:first-child {
+  padding-right: 4px;
+}
+
 #consonants tr:first-child th {
   writing-mode: sideways-lr;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 #consonants tr:last-child td {
@@ -357,9 +367,6 @@ th {
 #consonants th:first-child {
   text-align: right;
   width: 3%;
-}
-
-#vowels {
 }
 
 table#vowels {
@@ -442,7 +449,8 @@ div.rnd + span.feature,
   margin-right: 12%;
 }
 
-#vup, #vun, #vbr, #vur, #vvl {
+#vup, #vun, #vbr, #vur, #vvl,
+#v110, #v111 {
   font-variant: small-caps;
 }
 
