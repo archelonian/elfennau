@@ -179,6 +179,12 @@ function init() {
   }
 
   document.getElementById("hide").checked = false;
+
+  if (navigator.userAgent.match(/Mobile/)) {
+    document.getElementById("mobile-h2").innerHTML = "";
+    document.getElementById("mobile-sg").innerHTML = "S. Glottis";
+    document.getElementById("mobile-cg").innerHTML = "C. Glottis";
+  }
 }
 
 function flip(evt) {

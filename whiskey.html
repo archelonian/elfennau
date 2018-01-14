@@ -21,13 +21,14 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
 <html lang = "en">
   <head>
     <meta charset = "utf-8" />
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1" />
     <link rel = "stylesheet" type = "text/css" href = "css/whiskey.css" />
     <title>Whiskey | Interactive Feature Switchboard</title>
   </head>
   <body>
     <div id = "container">
       <div id = "header" class = "cell">
-        <h1>Whiskey /</h1> <h2>Interactive Feature Switchboard</h2>
+        <h1>Whiskey</h1> <h2 id = "mobile-h2">/ Interactive Feature Switchboard</h2>
         <p class = "be-small">&nbsp;</p>
         <hr />
         <p>
@@ -70,14 +71,14 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
             <input type = "radio" name = "sg" id = "sg-0" value = "0" onclick = "update()" checked = "checked"><label for = "sg-0">&plusmn;</label>
             <input type = "radio" name = "sg" id = "sg-p" value = "p" onclick = "update()"><label for = "sg-p">&plus;</label>
           </div>
-          <span class = "feature">Spread Glottis</span><br />
+          <span class = "feature" id = "mobile-sg">Spread Glottis</span><br />
 
           <div class = "group cg">
             <input type = "radio" name = "cg" id = "cg-m" value = "m" onclick = "update()"><label for = "cg-m">&minus;</label>
             <input type = "radio" name = "cg" id = "cg-0" value = "0" onclick = "update()" checked = "checked"><label for = "cg-0">&plusmn;</label>
             <input type = "radio" name = "cg" id = "cg-p" value = "p" onclick = "update()"><label for = "cg-p">&plus;</label>
           </div>
-          <span class = "feature">Constr. Glottis</span><br />
+          <span class = "feature" id = "mobile-cg">Constr. Glottis</span><br />
           <hr />
 
           <div class = "group cont">
@@ -116,8 +117,8 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
           <span class = "feature">Nasal</span><br />
           <hr />
 
-          <input type = "button" id = "reset" onclick = "reset()" /><label for = "reset">Reset All</label>
-          <input type = "button" id = "duddy" /><label for = "duddy">Reset None</label><br />
+          <input type = "button" id = "reset" value = "reset" onclick = "reset()" /><label for = "reset">Reset All</label>
+          <input type = "button" id = "duddy" value = "duddy" /><label for = "duddy">Reset None</label><br />
 
           <input type = "checkbox" id = "hide" onclick = "hide()" /><label for = "hide">Hide unspecified features</label>
         </div>
