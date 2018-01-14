@@ -65,13 +65,13 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                 ["vvn", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 1, 1, 2, 2, 1, 0, 2, 0, 0, 1],
                 ["vun", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 1, 1, 2, 0, 0, 0, 2, 0, 0, 1],
 //                     Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi L1 Fr Ba Tn Ph AT
-                ["vbr", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
-                ["var", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
-                ["vur", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 0, 0, 0, 2, 0, 0, 1],
+                ["vbr", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["var", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["vur", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 0, 0, 0, 2, 0, 0, 1],
 //                     Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi L1 Fr Ba Tn Ph AT
-                ["vlt", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
-                ["vat", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
-                ["vrt", 2, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["vlt", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["vat", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 0, 0, 1, 1, 1, 1, 1, 0, 1],
+                ["vrt", 2, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
 //                     Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi L1 Fr Ba Tn Ph AT
                 ["wbf", 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
                 ["vbf", 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1],
@@ -121,6 +121,8 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                 ["vq2", 2, 0, 0, 2, 0, 0, 3, 0, 0, 2, 0, 0, 1, 2, 0, 2, 2, 2, 0, 0, 0, 0, 0, 1],
                 ["wv2", 2, 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 1, 1, 2, 2, 0, 0, 2, 0, 0, 1]];
 
+var hidehiro = false;
+
 function init() {
   for (var i = 0; i < segments.length; i++) {
     for (var j = 0; j < segments[i].length; j++) {
@@ -167,10 +169,11 @@ function update() {
       output.push("<span class = \"minus\">&minus; " + features[i][1] + "</span>");
     } else if (fuckvalue == "p") {
       output.push("<span class = \"plus\">&plus; " + features[i][1] + "</span>");
-    } else if (fuckvalue == "0") {
+    } else if ((!hidehiro) && (fuckvalue == "0")) {
       output.push("<span class = \"plusmn\">&plusmn; " + features[i][1] + "</span>");
     }
 
+    console.log(output);
   }
 
   showBox(output);
@@ -218,6 +221,12 @@ function reset() {
     features[i][2] = "0";
     document.getElementById(features[i][0] + "-0").checked = true;
   }
+
+  update();
+}
+
+function hide() {
+  hidehiro = !hidehiro;
 
   update();
 }

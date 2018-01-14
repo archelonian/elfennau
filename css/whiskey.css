@@ -155,6 +155,10 @@ input[type = button] + label {
   background: white;
   padding: 8px;
   margin: 2px 1.75%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 input[type = button] + label:hover {
@@ -177,6 +181,56 @@ input[type = button] + label:active {
   color: #909090;
 }
 
+input[type = checkbox] {
+  display: none;
+}
+
+input[type = checkbox] + label {
+  margin-top: 3.5px;
+  font-size: 90%;
+}
+
+input[type = checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: -3px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid black;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  border: solid 1.5px black;
+  border-radius: 12px;
+}
+
+input[type = checkbox] + label:hover:before {
+  background: #d0d0d0;
+}
+
+input[type = checkbox] + label:after {
+  content: "";
+  display: inline-block;
+  visibility: hidden;
+  -moz-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  height: 8px;
+  width: 8px;
+  background: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: absolute;
+  left: 30.5px;
+  margin-top: 3px;
+}
+
+input[type = checkbox]:checked + label:after {
+  visibility: visible;
+}
 
 .feature {
   display: inline-block;
