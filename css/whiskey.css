@@ -34,8 +34,8 @@ body {
 
 #container {
   display: grid;
-  grid-template-rows: 0.5fr 3fr 4fr;
-  grid-template-columns: 0.8fr 0.8fr 0.75fr 3fr;
+  grid-template-rows: 140px 450px 660px;/*0.5fr 3fr 4fr;*/
+  grid-template-columns: 188px 188px 164px 720px;/*0.8fr 0.8fr 0.75fr 3fr;*/
 }
 
 .cell {
@@ -171,7 +171,6 @@ input[type = button] + label {
   border-radius: 12px;
   background: white;
   padding: 8px;
-  margin: 2px 1.75%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -377,12 +376,10 @@ table#vowels {
 }
 
 #vowels td {
-  width: 10%;
 }
 
 #vowels th:first-child {
   text-align: right;
-  width: 1%;
 }
 
 #vowels td {
