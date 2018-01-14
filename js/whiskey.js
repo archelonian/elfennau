@@ -147,23 +147,31 @@ function init() {
   for (var symbol of symbols) {
     symbol.addEventListener('click', function(evt) { flip(evt); });
   }
+
+  document.getElementById("hide").checked = false;
 }
 
 function flip(evt) {
   var properties = evt.target.id;
-  var seg = -1;
+  var segID = -1;
+  var segValue;
 
   for (var i = 0; i < segments.length; i++) {
     if (segments[i][0] === properties) {
-      seg = i;
+      segID = i;
       break;
     }
   }
 
   for (var i = 0; i < features.length; i++) {
-    features[i][2] = segments[seg][i + 1];
-    console.log(features[i][2] + " " + segments[seg][i + 1]);
-    document.getElementById(features[i][0] + "-" + segments[seg][i + 1]).checked = true;
+    segValue = segments[segID][i + 1];
+    if (segValue === "b") {
+      segValue = "0";
+    }
+
+    features[i][2] = segValue;
+    console.log(features[i][2] + " " + segValue);
+    document.getElementById(features[i][0] + "-" + segValue).checked = true;
   }
 
   update();
@@ -200,6 +208,8 @@ function update() {
       output.push("<span class = \"plusmn\">&plusmn; " + features[i][1] + "</span>");
     }
   }
+
+//  console.log(hidehiro);
 
   showBox(output);
   showChart(output);
