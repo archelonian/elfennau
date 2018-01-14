@@ -151,8 +151,8 @@ a:hover {
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
   display: inline-block;
-  border: solid 1.5px black;
-  border-radius: 12px;
+  border: solid 2px black;
+  border-radius: 16px;
   background: white;
   color: #909090;
 }
@@ -170,8 +170,8 @@ input[type = button] {
 
 input[type = button] + label {
   display: inline-block;
-  border: solid 1.5px black;
-  border-radius: 12px;
+  border: solid 2px black;
+  border-radius: 16px;
   background: white;
   padding: 8px;
   -webkit-user-select: none;
@@ -194,7 +194,7 @@ input[type = button] + label:active {
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
   display: inline-block;
-  border: solid 1.5px black;
+  border: solid 2px black;
   border-radius: 12px;
   background: white;
   color: #909090;
@@ -205,23 +205,22 @@ input[type = checkbox] {
 }
 
 input[type = checkbox] + label {
-  margin-top: 3.5px;
+  margin-top: 8px;
   font-size: 90%;
 }
 
 input[type = checkbox] + label:before {
   content: "";
   display: inline-block;
-  margin-right: 4px;
-  margin-bottom: -3px;
-  height: 12px;
-  width: 12px;
-  border: 1px solid black;
+  margin-right: 8px;
+  margin-bottom: -5px;
+  height: 18px;
+  width: 18px;
   -moz-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
-  border: solid 1.5px black;
+  border: solid 2px black;
   border-radius: 12px;
 }
 
@@ -296,9 +295,9 @@ input[type = radio]:checked + label {
 #box blockquote:before {
   content: " ";
   position: absolute;
-  border-left: 1.5px solid black;
-  border-top: 1.5px solid black;
-  border-bottom: 1.5px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   padding: 4px;
   top: -4px;
   bottom: -4px;
@@ -308,9 +307,9 @@ input[type = radio]:checked + label {
 #box blockquote:after {
   content: " ";
   position: absolute;
-  border-right: 1.5px solid black;
-  border-top: 1.5px solid black;
-  border-bottom: 1.5px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   padding: 4px;
   top: -4px;
   bottom: -4px;
