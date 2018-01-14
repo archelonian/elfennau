@@ -172,11 +172,11 @@ input[type = button] + label {
 }
 
 input[type = button] + label:hover {
-  background: #f8f8f8;
+  background: #d0d0d0;
 }
 
 input[type = button] + label:active {
-  background: #ffd0ff;
+  background: #ffff80;
 }
 
 #reset {
