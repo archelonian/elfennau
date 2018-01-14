@@ -189,7 +189,7 @@ function showBox(output) {
       box.innerHTML += output[i] + "<br />";
     }
   } else {
-    box.innerHTML += "&plusmn; All";
+    box.innerHTML += "<span class = \"plusmn\">&plusmn; All</span>";
   }
 
   box.innerHTML += "</p>";
