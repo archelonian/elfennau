@@ -353,6 +353,10 @@ th:first-child {
   padding-right: 4px;
 }
 
+td:empty {
+  background: #f0f0f7;
+}
+
 #consonants tr:first-child th {
   writing-mode: sideways-lr;
   padding-top: 4px;
@@ -442,7 +446,7 @@ div.rnd + span.feature,
   margin-right: 12%;
 }
 
-#vup, #vun, #vbr, #vur, #vvl,
+#vup, #wun, #vun, #wbr, #vbr, #wur, #vur, #wvl, #vvl, #vu2,
 #v110, #v111, #v621 {
   font-variant: small-caps;
 }
