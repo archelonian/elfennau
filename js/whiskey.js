@@ -196,7 +196,26 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                 ["v641", 0, 2, 2, 2, 0, 0, 2, 0, 0, 0, 0, 2, 2, 0, 1, 1, 2, 0, 2, 0, 2, 0, 2, 0] //  
                ];
 
+var enPhonemes = ["wbp", "vbp",                             "wap", "vap",                             "wvp", "vvp", "wgp",
+                         "vbn",        "vln",                      "van",                                    "vvn",
+                                                                   "vat",
+                                "wlf", "vlf", "wdf", "vdf", "waf", "vaf", "wqf", "vqf",                             "wgf", "vgf",
+                                                            "vaa",                             "vpa",
+                                                                   "val",
+                                                                                                      "wvz", "vvz",
+                                                            "wa2", "va2", "wq2", "vq2",
+
+                  "v000",                                                                 "v041",
+                                  "v110",                                 "v131",
+                  "v200",                                                                 "v241",
+                                                  "v320",
+                  "v400",                                         "v430",         "v440", "v441",
+                                  "v510",
+                                                  "v620",                         "v640", "v641"
+                ];
+
 var hidehiro = false;
+var engOn = false;
 var properties = "";
 
 function init() {
@@ -327,14 +346,15 @@ function showChart() {
   for (var i = 0; i < segments.length; i++) {
     for (var j = 0; j < features.length; j++) {
       var seg = document.getElementById(segments[i][0]);
-      if (!(features[j][2] === "0")) {
-        if ((features[j][2] === "m") && (segments[i][j + 1] === "0")) {//true but not applicable
+      if (engOn && enPhonemes.indexOf(segments[i][0]) == -1) { //if not english
+        seg.style.visibility = "hidden";
+      } else if (!(features[j][2] === "0")) {
+        if ((features[j][2] === "m") && (segments[i][j + 1] === "0")) { //true but not applicable
           seg.style.color = "#c0c0c0";
-        } else if (!(segments[i][j + 1] === "b")) {//false
+        } else if (!(segments[i][j + 1] === "b")) { //false
           if (!(features[j][2] === segments[i][j + 1])) {
             seg.style.color = "#c0c0c0";
             seg.parentElement.style.background = "#f0f0f7";
-//          seg.style.visibility = "hidden";
           }
         }
       }
@@ -361,6 +381,13 @@ function reset() {
 
 function hide() {
   hidehiro = document.getElementById("hide").checked;
+
+  update();
+}
+
+function english() {
+  engOn = document.getElementById("english").checked;
+  console.log(engOn);
 
   update();
 }
