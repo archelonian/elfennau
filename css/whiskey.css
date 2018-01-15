@@ -121,6 +121,15 @@ body {
   color: #808;
 }
 
+.symbol {
+  cursor: pointer;
+}
+
+.symbol:hover {
+  color: black !important;
+  text-shadow: 0px 0px 6px #bbf, 0px 0px 9px #f00;
+}
+
 a {
   font-weight: bold;
   color: #008;
@@ -349,6 +358,11 @@ th {
   font-size: 75%;
 }
 
+td {
+  margin: 0;
+  padding: 0;
+}
+
 th:first-child {
   padding-right: 4px;
 }
@@ -422,11 +436,40 @@ div.rnd + span.feature,
 #wba, #wla, #wda, #waa, #wra, #wqa, #wpa, #wva, #wua, #wfa, #wga,
 #wbl, #wll, #wdl, #wal, #wrl, #wql, #wpl, #wvl, #wul, #wfl, #wgl,
 #wbz, #wlz, #wdz, #waz, #wrz, #wqz, #wpz, #wvz, #wuz, #wfz, #wgz,
-#wb2, #wl2, #wd2, #wa2, #wr2, #wq2, #wp2, #wv2, #wu2, #wf2, #wg2 {
+#wb2, #wl2, #wd2, #wa2, #wr2, #wq2, #wp2, #wv2, #wu2, #wf2, #wg2,
+#vbp, #vlp, #vdp, #vap, #vrp, #vqp, #vpp, #vvp, #vup, #vfp, #vgp,
+#vbn, #vln, #vdn, #van, #vrn, #vqn, #vpn, #vvn, #vun, #vfn, #vgn,
+#vbr, #vlr, #vdr, #var, #vrr, #vqr, #vpr, #vvr, #vur, #vfr, #vgr,
+#vbt, #vlt, #vdt, #vat, #vrt, #vqt, #vpt, #vvt, #vut, #vft, #vgt,
+#vbf, #vlf, #vdf, #vaf, #vrf, #vqf, #vpf, #vvf, #vuf, #vff, #vgf,
+#vba, #vla, #vda, #vaa, #vra, #vqa, #vpa, #vva, #vua, #vfa, #vga,
+#vbl, #vll, #vdl, #val, #vrl, #vql, #vpl, #vvl, #vul, #vfl, #vgl,
+#vbz, #vlz, #vdz, #vaz, #vrz, #vqz, #vpz, #vvz, #vuz, #vfz, #vgz,
+#vb2, #vl2, #vd2, #va2, #vr2, #vq2, #vp2, #vv2, #vu2, #vf2, #vg2,
+#v000, #v001, #v010, #v011, #v020, #v021, #v030, #v031, #v040, #v041, 
+#v100, #v101, #v110, #v111, #v120, #v121, #v130, #v131, #v140, #v141, 
+#v200, #v201, #v210, #v211, #v220, #v221, #v230, #v231, #v240, #v241, 
+#v300, #v301, #v310, #v311, #v320, #v321, #v330, #v331, #v340, #v341, 
+#v400, #v401, #v410, #v411, #v420, #v421, #v430, #v431, #v440, #v441, 
+#v500, #v501, #v510, #v511, #v520, #v521, #v530, #v531, #v540, #v541, 
+#v600, #v601, #v610, #v611, #v620, #v621, #v630, #v631, #v640, #v641 {
   display: inline-block;
-  float: left;
-  width: 30%;
+  width: 35%;
+  padding: 0;
+  margin: 0;
   text-align: center;
+}
+
+#wbp, #wlp, #wdp, #wap, #wrp, #wqp, #wpp, #wvp, #wup, #wfp, #wgp,
+#wbn, #wln, #wdn, #wan, #wrn, #wqn, #wpn, #wvn, #wun, #wfn, #wgn,
+#wbr, #wlr, #wdr, #war, #wrr, #wqr, #wpr, #wvr, #wur, #wfr, #wgr,
+#wbt, #wlt, #wdt, #wat, #wrt, #wqt, #wpt, #wvt, #wut, #wft, #wgt,
+#wbf, #wlf, #wdf, #waf, #wrf, #wqf, #wpf, #wvf, #wuf, #wff, #wgf,
+#wba, #wla, #wda, #waa, #wra, #wqa, #wpa, #wva, #wua, #wfa, #wga,
+#wbl, #wll, #wdl, #wal, #wrl, #wql, #wpl, #wvl, #wul, #wfl, #wgl,
+#wbz, #wlz, #wdz, #waz, #wrz, #wqz, #wpz, #wvz, #wuz, #wfz, #wgz,
+#wb2, #wl2, #wd2, #wa2, #wr2, #wq2, #wp2, #wv2, #wu2, #wf2, #wg2 {
+  float: left;
   margin-left: 12%;
 }
 
@@ -439,10 +482,7 @@ div.rnd + span.feature,
 #vbl, #vll, #vdl, #val, #vrl, #vql, #vpl, #vvl, #vul, #vfl, #vgl,
 #vbz, #vlz, #vdz, #vaz, #vrz, #vqz, #vpz, #vvz, #vuz, #vfz, #vgz,
 #vb2, #vl2, #vd2, #va2, #vr2, #vq2, #vp2, #vv2, #vu2, #vf2, #vg2 {
-  display: inline-block;
   float: right;
-  width: 30%;
-  text-align: center;
   margin-right: 12%;
 }
 

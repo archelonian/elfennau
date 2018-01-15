@@ -197,6 +197,7 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                ];
 
 var hidehiro = false;
+var properties = "";
 
 function init() {
   for (var i = 0; i < segments.length; i++) {
@@ -233,28 +234,33 @@ function init() {
 }
 
 function flip(evt) {
-  var properties = evt.target.id;
-  var segID = -1;
-  var segValue;
-
-  for (var i = 0; i < segments.length; i++) {
-    if (segments[i][0] === properties) {
-      segID = i;
-      break;
-    }
-  }
-
-  for (var i = 0; i < features.length; i++) {
-    segValue = segments[segID][i + 1];
-    if (segValue === "b") {
-      segValue = "0";
+  if (properties === evt.target.id) {
+    properties = "";
+    reset();
+  } else {
+    properties = evt.target.id;
+    var segID = -1;
+    var segValue;
+    
+    for (var i = 0; i < segments.length; i++) {
+      if (segments[i][0] === properties) {
+        segID = i;
+        break;
+      }
     }
 
-    features[i][2] = segValue;
-    document.getElementById(features[i][0] + "-" + segValue).checked = true;
-  }
+    for (var i = 0; i < features.length; i++) {
+      segValue = segments[segID][i + 1];
+      if (segValue === "b") {
+        segValue = "0";
+      }
 
-  update();
+      features[i][2] = segValue;
+      document.getElementById(features[i][0] + "-" + segValue).checked = true;
+    }
+
+    update();
+  }
 }
 
 function update() {
@@ -289,10 +295,8 @@ function update() {
     }
   }
 
-//  console.log(hidehiro);
-
   showBox(output);
-  showChart(output);
+  showChart();
 }
 
 function showBox(output) {
@@ -319,15 +323,16 @@ function showChart() {
     seg.parentElement.style.background = "#fbfbf4";
   }
 
+
   for (var i = 0; i < segments.length; i++) {
     for (var j = 0; j < features.length; j++) {
       var seg = document.getElementById(segments[i][0]);
       if (!(features[j][2] === "0")) {
         if ((features[j][2] === "m") && (segments[i][j + 1] === "0")) {//true but not applicable
-          seg.style.color = "#a0a0a0";
+          seg.style.color = "#c0c0c0";
         } else if (!(segments[i][j + 1] === "b")) {//false
           if (!(features[j][2] === segments[i][j + 1])) {
-            seg.style.color = "#a0a0a0";
+            seg.style.color = "#c0c0c0";
             seg.parentElement.style.background = "#f0f0f7";
 //          seg.style.visibility = "hidden";
           }
@@ -355,7 +360,7 @@ function reset() {
 }
 
 function hide() {
-  hidehiro = !hidehiro;
+  hidehiro = document.getElementById("hide").checked;
 
   update();
 }
