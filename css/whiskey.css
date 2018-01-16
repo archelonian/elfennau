@@ -56,18 +56,6 @@ body {
   grid-template-columns: 188px 188px 176px 708px;/*0.8fr 0.8fr 0.75fr 3fr;*/
 }
 
-@media only screen and (min-width: 1281px) {
-  body {
-    font-size: 18pt;
-  }
-
-  #container {
-    display: grid;
-    grid-template-rows: 210px 675px 990px;/*0.5fr 3fr 4fr;*/
-    grid-template-columns: 282px 282px 264px 1062px;/*188px 188px 176px 708px;/*0.8fr 0.8fr 0.75fr 3fr;*/
-  }
-}
-
 .cell {
   padding: 6px;
 }
@@ -214,9 +202,10 @@ input[type = button] {
 input[type = button] + label {
   display: inline-block;
   border: solid 2px black;
-  border-radius: 16px;
+  border-radius: 12px;
   background: white;
-  padding: 8px;
+  padding: 4px;
+  font-size: 87.5%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -243,25 +232,14 @@ input[disabled = disabled] + label:active {
   margin: 0 auto;
 }
 
-#reset, #adder {
-  -moz-transition: all .1s ease-in;
-  -o-transition: all .1s ease-in;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
-  display: inline-block;
-  border: solid 2px black;
-  border-radius: 12px;
-  background: white;
-  color: #909090;
-}
-
 input[type = checkbox] {
   display: none;
 }
 
 input[type = checkbox] + label {
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 90%;
+  width: 200px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -271,10 +249,10 @@ input[type = checkbox] + label {
 input[type = checkbox] + label:before {
   content: "";
   display: inline-block;
-  margin-right: 8px;
-  margin-bottom: -5px;
-  height: 18px;
-  width: 18px;
+  margin-right: 4px;
+  margin-bottom: -4px;
+  height: 12px;
+  width: 12px;
   -moz-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   -webkit-transition: all .1s ease-in;
@@ -556,6 +534,49 @@ table#vowels {
 
 #vb2, #vl2, #vd2, #va2, #vr2, #vq2, #vp2, #vv2, #vu2, #vf2, #vg2 {
   margin-right: 15%;
+}
+
+@media only screen and (min-width: 1281px) {
+  body {
+    font-size: 18pt;
+  }
+
+  #container {
+    display: grid;
+    grid-template-rows: 210px 675px 990px;/*0.5fr 3fr 4fr;*/
+    grid-template-columns: 282px 282px 264px 1062px;/*188px 188px 176px 708px;/*0.8fr 0.8fr 0.75fr 3fr;*/
+  }
+
+  input[type = button] + label {
+    display: inline-block;
+    border: solid 2px black;
+    border-radius: 24px;
+    background: white;
+    padding: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+ input[type = checkbox] + label {
+    margin-top: 8px;
+    font-size: 90%;
+    width: 300px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  input[type = checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: -5px;
+    height: 18px;
+    width: 18px;
+  }
 }
 
 @media only screen and (max-device-width: 480px) {
