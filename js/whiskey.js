@@ -232,14 +232,14 @@ var natCls = [[  "plosive", 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1
               [      "low", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 0, 1, 1],
              ];
 
-var enPhonemes = ["wbp", "vbp",                             "wap", "vap",                             "wvp", "vvp", "wgp",
-                         "vbn",        "vln",                      "van",                                    "vvn",
-                                                                   "vat",
-                                "wlf", "vlf", "wdf", "vdf", "waf", "vaf", "wqf", "vqf",                             "wgf", "vgf",
+var enPhonemes = ["wbp", "vbp",                             "wap", "vap",                             "wvp", "vvp",
+                         "vbn",                                    "van",                                    "vvn",
+
+                                "wlf", "vlf", "wdf", "vdf", "waf", "vaf", "wqf", "vqf",                             "wgf",
                                                             "vaa",                             "vpa",
                                                                    "val",
-                                                                                                      "wvz", "vvz",
-                                                            "wa2", "va2", "wq2", "vq2",
+                                                                                                             "vvz",
+                                                                          "wq2", "vq2",
 
                   "v000",                                                                 "v041",
                                   "v110",                                 "v131",
@@ -254,7 +254,7 @@ var hidehiro = false;
 var engOn = false;
 var lastPhone = "";
 var lastCl = "";
-var gentlemen = ["Active", "Cheerful", "Creative", "Genius", "Gloomy", "Goofball", "Hot-headed", "Romantic", "Self-assured", "Unflirty", "Art lover", "Bookworm", "Foodie", "Geek", "Music lover", "Perfectionist", "Ambitious", "Catlover", "Childish", "Clumsy", "Dance machine", "Dog lover", "Glutton", "Insane", "Kleptomaniac", "Lazy", "Materialistic", "Neat", "Slob", "Squeamish", "Vegetarian", "Bro", "Evil", "Family-oriented", "Good", "Hates children", "Insider", "Jealous", "Loner", "Mean", "Noncommittal", "Outgoing", "Animal Affection", "High Metabolism", "Muser", "Dastardly", "Domestic", "Business-savvy", "Quick Learner", "Home Turf", "Alluring", "Collector", "Gregarious"];
+var gentlemen = ["Active", "Cheerful", "Creative", "Genius", "Gloomy", "Goofball", "Hot-headed", "Romantic", "Self-assured", "Unflirty", "Pretentious", "Bookworm", "Foodie", "Geek", "Relaxed", "Perfectionist", "Ambitious", "Catlover", "Childish", "Clumsy", "Flexible", "Deviant", "Glutton", "Insane", "Kleptomaniac", "Lazy", "Materialistic", "Neat", "Slob", "Squeamish", "Vegetarian", "Bro", "Evil", "Family-oriented", "Good", "Boring", "Insider", "Jealous", "Loner", "Mean", "Noncommittal", "Outgoing", "Primal", "Hungry", "Muser", "Dastardly", "Domestic", "Business-savvy", "Quick Learner", "Homesick", "Alluring", "Collector", "Gregarious"];
 var featureBoxText = "";
 var khoa = 0;
 
@@ -312,6 +312,8 @@ function init() {
     document.getElementById("mobile-sg").innerHTML = "S. Glottis";
     document.getElementById("mobile-cg").innerHTML = "C. Glottis";
   }
+
+  update();
 }
 
 function flipPhone(evt) {
@@ -396,6 +398,8 @@ function update() {
       case "p":
         groups[i].style.background = "#d0d0ff";
         break;
+      default:
+        console.log("Nawww...");
     }
 
     if (fuckvalue == "m") {
@@ -476,10 +480,14 @@ function showChart() {
 }
 
 function reset() {
-  for (var i = 0; i < features.length; i++) {
+  console.log(features.length);
+//for (var i = 0; i < features.length; i++) {
+  for (var i = 0; i < 24; i++) {
     features[i][2] = "0";
     document.getElementById(features[i][0] + "-0").checked = true;
   }
+
+
 
   update();
 }
@@ -501,25 +509,36 @@ function disperse(bros) {
   return bros[Math.floor(Math.random() * bros.length)];
 }
 
+function addFeatureToInventory(featureBox, featureName, featureID) {
+  features.push([featureID, featureName, "0"]);
+
+  for (var i = 0; i < segments.length; i++) {
+    segments[i].push("0");
+  }
+}
+
 function addFeature() {
   if (khoa == 0) {
     document.getElementById("custom-feature").innerHTML = "";
   }
+
   khoa += 1;
+
   var featureBox = document.getElementById("custom-feature");
   var featureName = disperse(gentlemen);
+  var featureID = "khoa" + khoa;
 
   featureBoxText += "          <div class = \"group nas\">" +
-                    "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-m\" value = \"m\" onclick = \"update()\"><label for = \"nas-m\">&minus;</label>" +
-                    "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-0\" value = \"0\" onclick = \"update()\" checked = \"checked\"><label for = \"nas-0\">&plusmn;</label>" +
-                    "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-p\" value = \"p\" onclick = \"update()\"><label for = \"nas-p\">&plus;</label>" +
+                    "            <input type = \"radio\" name = " + featureID + " id = " + featureID + "-m\" value = \"m\" onclick = \"update()\"><label for = " + featureID + "-m\">&minus;</label>" +
+                    "            <input type = \"radio\" name = " + featureID + " id = " + featureID + "-0\" value = \"0\" onclick = \"update()\" checked = \"checked\"><label for = " + featureID + "-0\">&plusmn;</label>" +
+                    "            <input type = \"radio\" name = " + featureID + " id = " + featureID + "-p\" value = \"p\" onclick = \"update()\"><label for = " + featureID + "-p\">&plus;</label>" +
                     "          </div>" +
                     "          <span class = \"feature\"><input type = \"text\" value = " + featureName + " /></span>";
 
-                    console.log(featureBoxText);//make this save whatever the user inputs
-
   featureBox.innerHTML = featureBoxText;
+
+  addFeatureToInventory(featureBox, featureName, featureID);
+  update();
 }
 
 init();
-update();

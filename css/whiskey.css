@@ -261,10 +261,10 @@ input[type = checkbox]:checked + label:before {
 input[type = text] {
   vertical-align: middle;
   display: inline-block;
-  font: 15pt charter;
+  font: 14pt charter;
   width: 142px;
   margin: -8px;
-  height: 17.5pt;
+  height: 17pt;
   padding: 0px;
 }
 
