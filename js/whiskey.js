@@ -514,7 +514,7 @@ function addFeature() {
                     "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-0\" value = \"0\" onclick = \"update()\" checked = \"checked\"><label for = \"nas-0\">&plusmn;</label>" +
                     "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-p\" value = \"p\" onclick = \"update()\"><label for = \"nas-p\">&plus;</label>" +
                     "          </div>" +
-                    "          <span class = \"feature\"><input type = \"text\" value = " + featureName + " /></span><br />";
+                    "          <span class = \"feature\"><input type = \"text\" value = " + featureName + " /></span>";
 
                     console.log(featureBoxText);//make this save whatever the user inputs
 
