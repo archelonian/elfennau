@@ -117,11 +117,13 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
           <span class = "feature">Nasal</span><br />
           <hr />
 
-          <input type = "button" id = "reset" value = "reset" onclick = "reset()" /><label for = "reset">Reset All</label>
-          <input type = "button" id = "duddy" value = "duddy" /><label for = "duddy">Reset None</label><br />
+          <div class = "button-holder">
+            <input type = "button" id = "reset" value = "reset" onclick = "reset()" /><label for = "reset">Reset All</label>
+            <input type = "button" id = "adder" value = "adder" onclick = "addFeature()" /><label for = "adder">Add new feature</label><br />
+          </div>
 
-          <input type = "checkbox" id = "hide" onclick = "hide()" /><label for = "hide">Hide unspecified features</label><br />
-          <input type = "checkbox" id = "english" onclick = "english()" /><label for = "english">Only show English phonemes</label>
+            <input type = "checkbox" id = "hide" onclick = "hide()" /><label for = "hide">Hide unspecified features</label><br />
+            <input type = "checkbox" id = "english" onclick = "english()" /><label for = "english">Only show English phonemes</label>
         </div>
 
         <div id = "switchboard2" class = "cell switchboard">
@@ -218,6 +220,11 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
             <input type = "radio" name = "atr" id = "atr-p" value = "p" onclick = "update()"><label for = "atr-p">&plus;</label>
           </div>
           <span class = "feature">ATR</span><br />
+          <hr />
+
+          <div id = "custom-feature">
+            <p>No custom features</p>
+          </div>
         </div>
         <div id = "box" class = "cell">
           <blockquote id = "little-box">
