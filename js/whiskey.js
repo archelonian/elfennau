@@ -255,6 +255,7 @@ var engOn = false;
 var lastPhone = "";
 var lastCl = "";
 var gentlemen = ["Active", "Cheerful", "Creative", "Genius", "Gloomy", "Goofball", "Hot-headed", "Romantic", "Self-assured", "Unflirty", "Art lover", "Bookworm", "Foodie", "Geek", "Music lover", "Perfectionist", "Ambitious", "Catlover", "Childish", "Clumsy", "Dance machine", "Dog lover", "Glutton", "Insane", "Kleptomaniac", "Lazy", "Materialistic", "Neat", "Slob", "Squeamish", "Vegetarian", "Bro", "Evil", "Family-oriented", "Good", "Hates children", "Insider", "Jealous", "Loner", "Mean", "Noncommittal", "Outgoing", "Animal Affection", "High Metabolism", "Muser", "Dastardly", "Domestic", "Business-savvy", "Quick Learner", "Home Turf", "Alluring", "Collector", "Gregarious"];
+var featureBoxText = "";
 var khoa = 0;
 
 function init() {
@@ -507,12 +508,17 @@ function addFeature() {
   khoa += 1;
   var featureBox = document.getElementById("custom-feature");
   var featureName = disperse(gentlemen);
-  featureBox.innerHTML += "          <div class = \"group nas\">" +
-                          "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-m\" value = \"m\" onclick = \"update()\"><label for = \"nas-m\">&minus;</label>" +
-                          "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-0\" value = \"0\" onclick = \"update()\" checked = \"checked\"><label for = \"nas-0\">&plusmn;</label>" +
-                          "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-p\" value = \"p\" onclick = \"update()\"><label for = \"nas-p\">&plus;</label>" +
-                          "          </div>" +
-                          "          <span class = \"feature\">" + featureName + "</span><br />";
+
+  featureBoxText += "          <div class = \"group nas\">" +
+                    "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-m\" value = \"m\" onclick = \"update()\"><label for = \"nas-m\">&minus;</label>" +
+                    "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-0\" value = \"0\" onclick = \"update()\" checked = \"checked\"><label for = \"nas-0\">&plusmn;</label>" +
+                    "            <input type = \"radio\" name = " + featureName.toLowerCase().replace(/ /, "-") + khoa + " id = \"nas-p\" value = \"p\" onclick = \"update()\"><label for = \"nas-p\">&plus;</label>" +
+                    "          </div>" +
+                    "          <span class = \"feature\"><input type = \"text\" value = " + featureName + " /></span><br />";
+
+                    console.log(featureBoxText);//make this save whatever the user inputs
+
+  featureBox.innerHTML = featureBoxText;
 }
 
 init();

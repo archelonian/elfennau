@@ -30,7 +30,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>
 body {
   font-family: charter;
   background: #fbfbf4;
-  font-size: 150%;
+  font-size: 18pt;/*150%;*/
 }
 
 #container {
@@ -256,6 +256,12 @@ input[type = checkbox] + label:hover:before {
 
 input[type = checkbox]:checked + label:before {
   background: black;
+}
+
+input[type = text] {
+  display: inline-block;
+  font: 15pt charter;
+  width: 142px;
 }
 
 /* input[type = checkbox] + label:after {
