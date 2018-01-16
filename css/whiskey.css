@@ -431,7 +431,6 @@ table#vowels {
   text-align: center;
 }
 
-div.rnd + span.feature,
   div.ant + span.feature, div.dist + span.feature,
  div.high + span.feature,  div.low + span.feature, div.front + span.feature, div.back + span.feature, div.tense + span.feature,
   div.atr + span.feature {
