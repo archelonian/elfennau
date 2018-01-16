@@ -212,9 +212,9 @@ var natCls = [[  "plosive", 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1
               ["retroflex", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 1, 1, 1, 1, 1, 1, 1],
               [  "palatal", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1],
               [    "velar", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 0, 1, 1],
-              [   "uvular", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 1, 1, 2, 1],
-              [  "pharynx", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-              [  "glottal", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+              [   "uvular", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 0, 1, 1, 1],
+              [  "pharynx", 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1],
+              [  "glottal", 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
               [    "front", 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1],
               [   "nfront", 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1],
               [  "central", 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1],
@@ -315,7 +315,6 @@ function init() {
 
 function flipPhone(evt) {
   if (lastPhone === evt.target.id) {
-    lastPhone = "";
     reset();
   } else {
     lastPhone = evt.target.id;
@@ -345,7 +344,6 @@ function flipPhone(evt) {
 
 function flipNatcl(evt) {
   if (lastCl === evt.target.id) {
-    lastCl = "";
     reset();
   } else {
     lastCl = evt.target.id;
@@ -477,14 +475,14 @@ function showChart() {
 }
 
 function reset() {
+  lastPhone = "";
+  lastCl = "";
   console.log(features.length);
-//for (var i = 0; i < features.length; i++) {
-  for (var i = 0; i < 24; i++) {
+  for (var i = 0; i < features.length; i++) {
+//for (var i = 0; i < 24; i++) {
     features[i][2] = "0";
     document.getElementById(features[i][0] + "-0").checked = true;
   }
-
-
 
   update();
 }
