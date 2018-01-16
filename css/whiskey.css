@@ -121,8 +121,13 @@ body {
   color: #808;
 }
 
-.symbol {
+.symbol, .natcl {
   cursor: pointer;
+}
+
+.natcl:hover {
+  color: black !important;
+  text-shadow: 0px 0px 6px #fbb, 0px 0px 9px #00f;
 }
 
 .symbol:hover {

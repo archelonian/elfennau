@@ -227,20 +227,20 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
           <table id = "consonants">
             <tr>
               <th></th>
-              <th><span class = "bro">&nbsp;</span>Labiolabial</th>
-              <th><span class = "bro">&nbsp;</span>Labiodental</th>
-              <th><span class = "bro">&nbsp;</span>Dental</th>
-              <th><span class = "bro">&nbsp;</span>Alveolar</th>
-              <th><span class = "bro">&nbsp;</span>Postalveolar</th>
-              <th><span class = "bro">&nbsp;</span>Retroflex</th>
-              <th><span class = "bro">&nbsp;</span>Palatal</th>
-              <th><span class = "bro">&nbsp;</span>Velar</th>
-              <th><span class = "bro">&nbsp;</span>Uvular</th>
-              <th><span class = "bro">&nbsp;</span>Pharyngeal</th>
-              <th><span class = "bro">&nbsp;</span>Glottal</th>
+              <th id = "lablabial" class = "natcl"><span class = "bro">&nbsp;</span>Labiolabial</th>
+              <th id = "labdental" class = "natcl"><span class = "bro">&nbsp;</span>Labiodental</th>
+              <th id = "dental" class = "natcl"><span class = "bro">&nbsp;</span>Dental</th>
+              <th id = "alveolar" class = "natcl"><span class = "bro">&nbsp;</span>Alveolar</th>
+              <th id = "palveolar" class = "natcl"><span class = "bro">&nbsp;</span>Postalveolar</th>
+              <th id = "retroflex" class = "natcl"><span class = "bro">&nbsp;</span>Retroflex</th>
+              <th id = "palatal" class = "natcl"><span class = "bro">&nbsp;</span>Palatal</th>
+              <th id = "velar" class = "natcl"><span class = "bro">&nbsp;</span>Velar</th>
+              <th id = "uvular" class = "natcl"><span class = "bro">&nbsp;</span>Uvular</th>
+              <th id = "pharynx" class = "natcl"><span class = "bro">&nbsp;</span>Pharyngeal</th>
+              <th id = "glottal" class = "natcl"><span class = "bro">&nbsp;</span>Glottal</th>
             </tr>
             <tr>
-              <th>Plosive</th>
+              <th><span id = "plosive" class = "natcl">Plosive</span></th>
               <td><span id = "wbp" class = "symbol">p</span> <span id = "vbp" class = "symbol">b</span></td>
               <td><span id = "wlp" class = "symbol">p&#810;</span> <span id = "vlp" class = "symbol">b&#810;</span></td>
               <td><span id = "wdp" class = "symbol">t&#810;</span> <span id = "vdp" class = "symbol">d&#810;</span></td>
@@ -254,7 +254,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td><span id = "wgp" class = "symbol">&#660;</span></td>
             </tr>
             <tr>
-              <th>Nasal</th>
+              <th><span id = "nasal" class = "natcl">Nasal</span></th>
               <td><span id = "wbn" class = "symbol">m&#805;</span> <span id = "vbn" class = "symbol">m</span></td>
               <td><span id = "wln" class = "symbol">&#625;&#778;</span> <span id = "vln" class = "symbol">&#625;</span></td>
               <td><span id = "wdn" class = "symbol">n&#810;&#778;</span> <span id = "vdn" class = "symbol">n&#810;</span></td>
@@ -268,7 +268,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Trill</th>
+              <th><span id = "trill" class = "natcl">Trill</span></th>
               <td><span id = "wbr" class = "symbol">b&#805;</span> <span id = "vbr" class = "symbol">b</span></td>
               <td></td>
               <td></td>
@@ -282,7 +282,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Tap / Flap</th>
+              <th><span id = "flap" class = "natcl">Tap / Flap</span></th>
               <td></td>
               <td><span id = "wlt" class = "symbol">&#11377;&#805;</span> <span id = "vlt" class = "symbol">&#11377;</span></td>
               <td></td>
@@ -296,7 +296,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Fricative</th>
+              <th><span id = "fricative" class = "natcl">Fricative</span></th>
               <td><span id = "wbf" class = "symbol">&#632;</span> <span id = "vbf" class = "symbol">&beta;</span></td>
               <td><span id = "wlf" class = "symbol">f</span> <span id = "vlf" class = "symbol">v</span></td>
               <td><span id = "wdf" class = "symbol">&theta;</span> <span id = "vdf" class = "symbol">&eth;</span></td>
@@ -310,7 +310,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td><span id = "wgf" class = "symbol">h</span> <span id = "vgf" class = "symbol">&#614;</span></td>
             </tr>
             <tr>
-              <th>Lateral Fricative</th>
+              <th><span id = "latfric" class = "natcl">Lateral Fricative</span></th>
               <td></td>
               <td></td>
               <td></td>
@@ -324,7 +324,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Approximant</th>
+              <th><span id = "approx" class = "natcl">Approximant</span></th>
               <td></td>
               <td><span id = "wla" class = "symbol">&#651;&#805;</span> <span id = "vla" class = "symbol">&#651;</span></td>
               <td></td>
@@ -338,7 +338,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Lateral Approximant</th>
+              <th><span id = "latapprox" class = "natcl">Lateral Approximant</span></th>
               <td></td>
               <td></td>
               <td></td>
@@ -352,7 +352,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Labial Approximant</th>
+              <th><span id = "labapprox" class = "natcl">Labial Approximant</span></th>
               <td></td>
               <td></td>
               <td></td>
@@ -366,7 +366,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Affricate</th>
+              <th><span id = "affricate" class = "natcl">Affricate</span></th>
               <td><span id = "wb2" class = "symbol">p&#865;&#632;</span> <span id = "vb2" class = "symbol">b&#865;&beta;</span></td>
               <td><span id = "wl2" class = "symbol">p&#865;f</span> <span id = "vl2" class = "symbol">b&#865;v</span></td>
               <td><span id = "wd2" class = "symbol">t&#810;&#865;&theta;</span> <span id = "vd2" class = "symbol">d&#810;&#865;&eth;</span></td>
@@ -384,14 +384,14 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
           <table id = "vowels">
             <tr>
               <th></th>
-              <th colspan = "2">Front</th>
-              <th colspan = "2">Near-front</th>
-              <th colspan = "2">Central</th>
-              <th colspan = "2">Near-back</th>
-              <th colspan = "2">Back</th>
+              <th id = "front" class = "natcl" colspan = "2">Front</th>
+              <th id = "nfront" class = "natcl" colspan = "2">Near-front</th>
+              <th id = "central" class = "natcl" colspan = "2">Central</th>
+              <th id = "nback" class = "natcl" colspan = "2">Near-back</th>
+              <th id = "back" class = "natcl" colspan = "2">Back</th>
             </tr>
             <tr>
-              <th>High</th>
+              <th id = "high" class = "natcl">High</th>
               <td><span id = "v000" class = "symbol">i</span></td>
               <td><span id = "v001" class = "symbol">y</span></td>
               <td></td>
@@ -404,7 +404,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td><span id = "v041" class = "symbol">u</span></td>
             </tr>
             <tr>
-              <th>Near-High</th>
+              <th id = "nhigh" class = "natcl">Near-High</th>
               <td></td>
               <td></td>
               <td><span id = "v110" class = "symbol">i</span></td>
@@ -417,7 +417,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Mid-High</th>
+              <th id = "mhigh" class = "natcl">Mid-High</th>
               <td><span id = "v200" class = "symbol">e</span></td>
               <td><span id = "v201" class = "symbol">&oslash;</span></td>
               <td></td>
@@ -430,7 +430,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td><span id = "v241" class = "symbol">o</span></td>
             </tr>
             <tr>
-              <th>Mid</th>
+              <th id = "mid" class = "natcl">Mid</th>
               <td></td>
               <td></td>
               <td></td>
@@ -443,7 +443,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Mid-Low</th>
+              <th id = "mlow" class = "natcl">Mid-Low</th>
               <td><span id = "v400" class = "symbol">&#603;</span></td>
               <td><span id = "v401" class = "symbol">&oelig;</span></td>
               <td></td>
@@ -456,7 +456,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td><span id = "v441" class = "symbol">&#596;</span></td>
             </tr>
             <tr>
-              <th>Near-Low</th>
+              <th id = "nlow" class = "natcl">Near-Low</th>
               <td></td>
               <td></td>
               <td><span id = "v510" class = "symbol">&aelig;</span></td>
@@ -469,7 +469,7 @@ along with Whiskey.  If not, see <http://www.gnu.org/licenses/>.
               <td></td>
             </tr>
             <tr>
-              <th>Low</th>
+              <th id = "low" class = "natcl">Low</th>
               <td></td>
               <td></td>
               <td></td>

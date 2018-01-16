@@ -196,6 +196,42 @@ var segments = [["wbp", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1, 1,
                 ["v641", 0, 2, 2, 2, 0, 0, 2, 0, 0, 0, 0, 2, 2, 0, 1, 1, 2, 0, 2, 0, 2, 0, 2, 0] //  
                ];
 
+//                         Co So Sy Vo SG CG Cn St La DR Na Lb Rd Co An Di Do Hi L1 Fr Ba Tn Ph AT
+var natCls = [[  "plosive", 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [    "nasal", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [    "trill", 2, 2, 1, 1, 1, 1, 2, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [     "flap", 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              ["fricative", 1, 0, 1, 1, 1, 1, 2, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [  "latfric", 1, 0, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [   "approx", 1, 2, 1, 1, 1, 1, 2, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1],
+              ["latapprox", 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              ["labapprox", 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1],
+              ["affricate", 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              ["lablabial", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              ["labdental", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [   "dental", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              [ "alveolar", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+              ["palveolar", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 0, 1, 1, 1, 1, 1, 1, 1],
+              ["retroflex", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 1, 2, 1, 1, 1, 1],
+              [  "palatal", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 1],
+              [    "velar", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 0, 1, 1, 1, 1],
+              [   "uvular", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 0, 1, 1, 2, 1, 1, 1],
+              [  "pharynx", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1],
+              [  "glottal", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1],
+              [    "front", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1],
+              [   "nfront", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1],
+              [  "central", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1],
+              [    "nback", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1],
+              [     "back", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1],
+              [     "high", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1],
+              [    "nhigh", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 0, 1, 1],
+              [    "mhigh", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 2, 1, 1],
+              [      "mid", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1],
+              [     "mlow", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1],
+              [     "nlow", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1],
+              [      "low", 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 0, 1, 1],
+             ];
+
 var enPhonemes = ["wbp", "vbp",                             "wap", "vap",                             "wvp", "vvp", "wgp",
                          "vbn",        "vln",                      "van",                                    "vvn",
                                                                    "vat",
@@ -216,10 +252,28 @@ var enPhonemes = ["wbp", "vbp",                             "wap", "vap",       
 
 var hidehiro = false;
 var engOn = false;
-var properties = "";
+var lastPhone = "";
+var lastCl = "";
 
 function init() {
-  for (var i = 0; i < segments.length; i++) {
+  for (var i = 0; i < natCls.length; i++) {
+    for (var j = 0; j < natCls[i].length; j++) {
+      switch (natCls[i][j]) {
+        case 0:
+          natCls[i][j] = "m";
+          break;
+        case 1:
+          natCls[i][j] = "0";
+          break;
+        case 2:
+          natCls[i][j] = "p";
+          break;
+        case 3:
+          natCls[i][j] = "b";
+          break;
+      }
+    }
+  }for (var i = 0; i < segments.length; i++) {
     for (var j = 0; j < segments[i].length; j++) {
       switch (segments[i][j]) {
         case 0:
@@ -240,7 +294,12 @@ function init() {
 
   var symbols = document.getElementsByClassName("symbol");
   for (var symbol of symbols) {
-    symbol.addEventListener('click', function(evt) { flip(evt); });
+    symbol.addEventListener('click', function(evt) { flipPhone(evt); });
+  }
+
+  var natcls = document.getElementsByClassName("natcl");
+  for (var natcl of natcls) {
+    natcl.addEventListener('click', function(evt) { flipNatcl(evt); });
   }
 
   document.getElementById("hide").checked = false;
@@ -252,17 +311,17 @@ function init() {
   }
 }
 
-function flip(evt) {
-  if (properties === evt.target.id) {
-    properties = "";
+function flipPhone(evt) {
+  if (lastPhone === evt.target.id) {
+    lastPhone = "";
     reset();
   } else {
-    properties = evt.target.id;
+    lastPhone = evt.target.id;
     var segID = -1;
     var segValue;
     
     for (var i = 0; i < segments.length; i++) {
-      if (segments[i][0] === properties) {
+      if (segments[i][0] === lastPhone) {
         segID = i;
         break;
       }
@@ -276,6 +335,37 @@ function flip(evt) {
 
       features[i][2] = segValue;
       document.getElementById(features[i][0] + "-" + segValue).checked = true;
+    }
+
+    update();
+  }
+}
+
+function flipNatcl(evt) {
+  if (lastCl === evt.target.id) {
+    lastCl = "";
+    reset();
+  } else {
+    lastCl = evt.target.id;
+    var natClID = -1;
+    var natClValue;
+
+    for (var i = 0; i < natCls.length; i++) {
+      if (natCls[i][0] === evt.target.id) {
+        natClID = i;
+        break;
+      }
+    }
+
+    for (var i = 0; i < features.length; i++) {
+      natClValue = natCls[natClID][i + 1];
+      if (natClValue === "b") {
+        natClValue = "0";
+      }
+
+      features[i][2] = natClValue;
+      console.log(features[i][0] + " " + features[i][2]);
+      document.getElementById(features[i][0] + "-" + features[i][2]).checked = true;
     }
 
     update();
@@ -368,6 +458,18 @@ function showChart() {
       seg.parentElement.style.background = "#fbfbf4";
     }
   }
+
+  //flip rows and columns
+//  for (var i = 0; i < natCls.length; i++) {
+//    var natCl = document.getElementById(natCls[i][0]);
+//
+//    for (var j = 0; j < segments.length; j++) {
+//      switch (natCl) {
+//        case "plosive":
+//          console.log(segments[j][0].charAt(2));
+//          if (segments[j][0].charAt(2) === "p" && document.getElementById([segments[i][0]).parentElement.style.background = "#fbfbf4") {
+//            seg.parent
+//  }
 }
 
 function reset() {
