@@ -536,7 +536,8 @@ table#vowels {
   margin-right: 15%;
 }
 
-@media only screen and (min-width: 1281px) {
+/*@media only screen and (min-width: 1281px) {*/
+@media only screen and (min-width: 2560px) {
   body {
     font-size: 18pt;
   }
